@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root{
+    /*Fonts*/
+    --lora: "Lora", serif;
+    --urbanist: "Urbanist", sans-serif;
+    --dancing-script: "Dancing Script", cursive;
+
+    /*Weight*/
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+
+    /*Spaces*/
+    --3xs: 2px;
+    --2xs: 4px;
+    --xs: 8px;
+    --sm: 16px;
+    --md: 24px;
+    --lg: 32px;
+    --xl: 48px;
+    --2xl: 64px;
+    --3xl: 80px;
+    --4xl: 96px;
+    --5xl: 128px;
+    --6xl: 160px;
+    --7xl: 192px;
+
+    /* Text Styles */
+
+    /* Heading */
+    --h1:
+        var(--semi-bold)
+        116px/96px
+        var(--lora);
+
+    --h2:
+        var(--semi-bold)
+        96px/87px
+        var(--lora);
+
+    --h3:
+        var(--semi-bold)
+        40px/48px
+        var(--lora);
+
+    --h4:
+        var(--regular)
+        32px/40px
+        var(--lora);
+
+    --h5:
+        var(--regular)
+        24px/30px
+        var(--lora);
+
+    --h6:
+        var(--regular)
+        16px/18px
+        var(--lora);
+    
+
+    /* Body */
+    --body-extraLarge-regular:
+        var(--regular)
+        48px/82px
+        var(--urbanist);
+    
+    --body-extraLarge-bold:
+        var(--semi-bold)
+        48px/82px
+        var(--urbanist);
+    
+    --body-large-regular:
+        var(--regular)
+        32px/48px
+        var(--urbanist);
+
+    --body-large-bold:
+        var(--semi-bold)
+        32px/48px
+        var(--urbanist);
+
+    --body-base-regular:
+        var(--regular)
+        24px/30px
+        var(--urbanist);
+
+    --body-base-bold:
+        var(--semi-bold)
+        24px/30px
+        var(--urbanist);
+
+    --body-small-regular:
+        var(--regular)
+        18px/24px
+        var(--urbanist);
+
+    --body-small-bold:
+        var(--semi-bold)
+        18px/24px
+        var(--urbanist);
+
+    --body-tiny-regular:
+        var(--regular)
+        16px/20px
+        var(--urbanist);
+
+    --body-tiny-bold:
+        var(--semi-bold)
+        16px/20px
+        var(--urbanist);
+
+    --body-superTiny-regular:
+        var(--regular)
+        14px/18px
+        var(--urbanist);
+
+    --body-superTiny-bold:
+        var(--semi-bold)
+        14px/18px
+        var(--urbanist);
+
+    --body-extraTiny-regular:
+        var(--regular)
+        12px/16px
+        var(--urbanist);
+
+    --body-extraTiny-bold:
+        var(--semi-bold)
+        12px/16px
+        var(--urbanist);
+
+    /* Caption */
+    --caption-large:
+        var(--semi-bold)
+        32px/100px
+        var(--urbanist);
+    
+    --caption-base:
+        var(--semi-bold)
+        16px/100px
+        var(--urbanist);
+    
+    --caption-small:
+        var(--semi-bold)
+        14px/100px
+        var(--urbanist);
+
+    --caption-tiny:
+        var(--semi-bold)
+        12px/100px
+        var(--urbanist);
+
+    /* Accent */
+    --accent-h1:
+        var(--regular)
+        116px/96px
+        var(--dancing-script);
+
+    --accent-h2:
+        var(--regular)
+        96px/87px
+        var(--dancing-script);
+    
+    --accent-h3:
+        var(--regular)
+        40px/48px
+        var(--dancing-script);
+    
+    --accent-h4:
+        var(--regular)
+        32px/40px
+        var(--dancing-script);
+    
+    /* Logo */
+    --logo-desktop-large:
+        var(--medium)
+        36px
+        var(--urbanist);
+
+    --logo-desktop-base:
+        var(--medium)
+        14px
+        var(--urbanist);
+
+    --logo-mobile-large:
+        var(--medium)
+        24px
+        var(--urbanist);
+    
+    --logo-mobile-base:
+        var(--medium)
+        12px
+        var(--urbanist);
+
+    /* Colors */
+
+    /* Primaries */
+    --primary-50: #F7EFE9;
+    --primary-100: #E7CDBA;
+    --primary-200: #DBB599;
+    --primary-300: #CB936B;
+    --primary-400: #C17E4E;
+    --primary-500: #B15E22;
+    --primary-600: #A1561F;
+    --primary-700: #7E4318;
+    --primary-800: #613413;
+    --primary-900: #4A270E;
+
+    /* Secondaries */
+    --secondary-50: #EAF1F8;
+    --secondary-100: #BFD4EA;
+    --secondary-200: #A0BFE0;
+    --secondary-300: #75A2D1;
+    --secondary-400: #5A90C9;
+    --secondary-500: #3174BB;
+    --secondary-600: #2D6AAA;
+    --secondary-700: #235285;
+    --secondary-800: #1B4067;
+    --secondary-900: #15314F;
+
+    /* Background */
+    --background-50: #FCFAF8;
+    --background-100: #F6F0E8;
+    --background-200: #F2E9DD;
+    --background-300: #ECE0CE;
+    --background-400: #E8D9C5;
+    --background-500: #E2D0B6;
+    --background-600: #CEBDA6;
+    --background-700: #A09481;
+    --background-800: #7C7264;
+    --background-900: #5F574C;
+
+    /* Neutrals */
+    --neutral-50: #F2F2F2;
+    --neutral-100: #D6D6D6;
+    --neutral-200: #C2C2C2;
+    --neutral-300: #A6A6A6;
+    --neutral-400: #959595;
+    --neutral-500: #7A7A7A;
+    --neutral-600: #6F6F6F;
+    --neutral-700: #575757;
+    --neutral-800: #434343;
+    --neutral-900: #333333;
+
+    /* Base */
+    --white: #FCFCFC;
+    --black: #0C0C0C;
+
+    /* Success */
+    --success-50: #EEF8E8;
+    --success-100: #CBE8B7;
+    --success-200: #B1DD94;
+    --success-300: #8ECD64;
+    --success-400: #78C445;
+    --success-500: #56B517;
+    --success-600: #4EA515;
+    --success-700: #3D8110;
+    --success-800: #2F640D;
+    --success-900: #244C0A;
+
+    /* Warning */
+    --warning-50: #FEF4E6;
+    --warning-100: #FDDDB3;
+    --warning-200: #FBCC8E;
+    --warning-300: #FAB55A;
+    --warning-400: #F9A63A;
+    --warning-500: #F79009;
+    --warning-600: #E18308;
+    --warning-700: #AF6606;
+    --warning-800: #884F05;
+    --warning-900: #683C04;
+
+    /* Error */
+    --error-50: #FAE8E6;
+    --error-100: #EFB6B2;
+    --error-200: #E7938D;
+    --error-300: #DB6259;
+    --error-400: #D54339;
+    --error-500: #CA1407;
+    --error-600: #B81206;
+    --error-700: #8F0E05;
+    --error-800: #6F0B04;
+    --error-900: #550803;
+
+    /* Accent */
+    --accent-50: #F7F3EA;
+    --accent-100: #E5DABD;
+    --accent-200: #D8C89D;
+    --accent-300: #C6AF70;
+    --accent-400: #BB9F54;
+    --accent-500: #AA8729;
+    --accent-600: #9B7B25;
+    --accent-700: #79601D;
+    --accent-800: #5E4A17;
+    --accent-900: #473911;
+
+
+    /*Buttons*/
+    
+    /* Button Disabled */
+    --button-default: var(--neutral-300);
+
+    /* Button / Solid / Default */
+    --button-solid-default-primary: var(--primary-500);
+    --button-solid-default-secondary: var(--secondary-500);
+
+    /* Button / Solid / Hover */
+    --button-solid-hover-primary: var(--primary-300);
+    --button-solid-hover-secondary: var(--secondary-300);
+
+    /* Button / Solid / Active */
+    --button-solid-active-primary: var(--primary-700);
+    --button-solid-active-secondary: var(--secondary-700);
+
+    /* Button / Outlined / Default */
+    --button-outlined-default-primary: var(--primary-500);
+    --button-outlined-default-secondary: var(--secondary-500);
+
+    /* Button / Outlined / Hover */
+    --button-outlined-hover-primary: var(--primary-300);
+    --button-outlined-hover-secondary: var(--secondary-300);
+
+    /* Button / Outlined / Active */
+    --button-outlined-active-primary: var(--primary-700);
+    --button-outlined-active-secondary: var(--secondary-700);
+
+    /* Texts */
+
+    /* Text / Light */
+    --text-light: var(--black);
+
+    /* Text / Dark */
+    --text-dark: var(--white);
+}
