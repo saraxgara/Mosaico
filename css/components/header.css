@@ -30,7 +30,7 @@
 .nav-icon{
     width: var(--md);
 }
-.main-header-button{
+.main-header-btn{
     width: 200px;
     height: 57px;
     padding: var(--sm) var(--lg);
