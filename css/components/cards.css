@@ -1,0 +1,202 @@
+/* PRODUCT CARD */
+.product-card{
+    width: 340px;
+    border: 1px solid var(--primary-100);
+    border-radius: var(--sm);
+    overflow: hidden;
+    background-color: var(--white);
+}
+.product-card-image-container{
+    position: relative;
+    width: 100%;
+    height: 290px;
+}
+.product-card-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-card-favorite{
+    position: absolute;
+    top: var(--md);
+    right: var(--md);
+    width: var(--xl);
+    height: var(--xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 100%;
+    background-color: var(--white);
+    cursor: pointer;
+}
+.product-card-favorite img{
+    width: var(--md);
+}
+.product-card-info{
+    display: flex;
+    flex-direction: column;
+    gap: var(--xl);
+    padding: var(--md);
+}
+.product-card-info-price{
+    display: flex;
+    flex-direction: column;
+    gap: var(--md);
+}
+.product-card-text{
+    display: flex;
+    flex-direction: column;
+    gap: var(--xs);
+}
+.product-card-title{
+    margin: 0 0 var(--xs);
+    color: var(--black);
+    font: var(--body-small-bold);
+}
+.product-card-material{
+    color: var(--black);
+    font: var(--body-tiny-regular);
+}
+.product-card-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--lg);
+    color: var(--black);
+    font: var(--body-small-bold);
+}
+.product-card-cart{
+    width: var(--md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.product-card-cart img{
+    width: var(--md);
+}
+.product-card-rating{
+    display: flex;
+    align-items: center;
+    gap: var(--xs);
+}
+.product-card-stars{
+    display: flex;
+    gap: var(--xs);
+}
+.product-star-icon{
+    width: var(--md);
+}
+.product-card-reviews{
+    color: var(--black);
+    font: var(--body-tiny-regular);
+}
+
+/* WORKSHOP CARD */
+.workshop-card{
+    width: 340px;
+    border: 1px solid var(--primary-100);
+    border-radius: var(--sm);
+    overflow: hidden;
+    background-color: var(--white);
+}
+.workshop-card-image-container{
+    position: relative;
+    width: 100%;
+    height: 290px;
+}
+.workshop-card-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.workshop-card-date{
+    position: absolute;
+    top: var(--md);
+    left: var(--md);
+    width: var(--3xl);
+    height: var(--3xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 100%;
+    gap: var(--2xs);
+}
+.workshop-card-date-day{
+    color: var(--black);
+    font: var(--body-small-bold);
+}
+.workshop-card-date-month{
+    color: var(--black);
+    font: var(--body-tiny-regular);
+}
+.workshop-card-favorite{
+    position: absolute;
+    top: var(--md);
+    right: var(--md);
+    width: var(--xl);
+    height: var(--xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 100%;
+    background-color: var(--white);
+    cursor: pointer;
+}
+.workshop-card-favorite img{
+    width: var(--md);
+}
+.workshop-card-info{
+    display: flex;
+    flex-direction: column;
+    gap: var(--xl);
+    padding: var(--md);
+}
+.workshop-card-info-details{
+    display: flex;
+    flex-direction: column;
+    gap: var(--xs);
+}
+.workshop-card-title{
+    color: var(--black);
+    font: var(--body-small-bold);
+}
+.workshop-card-details{
+    display: flex;
+    align-items: center;
+    gap: var(--lg);
+}
+.workshop-card-detail{
+    display: flex;
+    align-items: center;
+    gap: var(--2xs);
+    color: var(--black);
+    font: var(--body-tiny-regular);
+}
+.workshop-card-detail img{
+    width: var(--sm);
+}
+.workshop-card-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--black);
+    font: var(--body-small-bold);
+}
+.workshop-card-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.workshop-card-cart img{
+    width: var(--md);
+}
