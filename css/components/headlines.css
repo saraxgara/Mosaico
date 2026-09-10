@@ -1,0 +1,33 @@
+.headline-section{
+    padding: var(--xl);
+}
+.headline-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--lg);
+}
+.headline-upper-tab{
+    display: flex;
+    gap: var(--lg);
+}
+.headline-upper-tab-text{
+    color: var(--black);
+    font: var(--body-small-bold);
+}
+.headline-upper-tab-icon{
+    width: var(--md);
+}
+.headline-text{
+    display: flex;
+    flex-direction: column;
+    gap: var(--sm);
+}
+.headline-main-title{
+    color: var(--black);
+    font: var(--h3);
+}
+.headline-main-text{
+    color: var(--black);
+    font: var(--body-base-regular);
+}

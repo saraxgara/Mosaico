@@ -4,7 +4,7 @@
     background-color: var(--background-50);
 }
 .footer-box{
-    width: 1700px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;

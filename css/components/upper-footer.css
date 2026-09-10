@@ -3,7 +3,7 @@
     background-color: var(--secondary-900);
 }
 .upper-footer-box{
-    width: 1700px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
