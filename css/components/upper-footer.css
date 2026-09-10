@@ -1,9 +1,9 @@
 .upper-footer{
-    padding: var(--lg);
+    padding: var(--xl);
     background-color: var(--secondary-900);
 }
 .upper-footer-box{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
