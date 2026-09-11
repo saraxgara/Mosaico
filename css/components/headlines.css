@@ -1,5 +1,5 @@
 .headline-section{
-    padding: var(--xl);
+    padding: 0 var(--xl);
 }
 .headline-content{
     width: 100%;

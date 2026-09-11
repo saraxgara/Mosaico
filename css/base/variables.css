@@ -223,6 +223,18 @@
     --secondary-800: #1B4067;
     --secondary-900: #15314F;
 
+    /* Tertiaries */
+    --tertiary-50: #F1EDEA;
+    --tertiary-100: #D5C8BE;
+    --tertiary-200: #C0AE9F;
+    --tertiary-300: #A48873;
+    --tertiary-400: #927158;
+    --tertiary-500: #774E2E;
+    --tertiary-600: #6C472A;
+    --tertiary-700: #543721;
+    --tertiary-800: #412B19;
+    --tertiary-900: #322113;
+
     /* Background */
     --background-50: #FCFAF8;
     --background-100: #F6F0E8;
