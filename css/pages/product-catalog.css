@@ -19,7 +19,6 @@
     width: var(--md);
 }
 .product-tab-filter-btn{
-    width: 160px;
     height: var(--xl);
     display: flex;
     align-items: center;
@@ -74,7 +73,6 @@
     font: var(--body-small-bold);
 }
 .product-sequence-tab-btn{
-    width: 207px;
     height: var(--xl);
     display: flex;
     align-items: center;
@@ -113,6 +111,7 @@
     gap: var(--md);
 }
 .product-aside-title-group{
+    width: 226px;
     display: flex;
     justify-content: space-between;
     align-items: center;
