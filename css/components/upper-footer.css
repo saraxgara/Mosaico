@@ -1,12 +1,13 @@
 .upper-footer{
+    display: flex;
+    justify-content: center;
     padding: var(--xl);
     background-color: var(--secondary-900);
 }
 .upper-footer-box{
-    max-width: 100%;
+    min-width: var(--content-min-width);
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .upper-footer-group{
     display: flex;

@@ -1,8 +1,10 @@
 .headline-section{
+    display: flex;
+    justify-content: center;
     padding: 0 var(--xl);
 }
 .headline-content{
-    width: 100%;
+    min-width: var(--content-min-width);
     display: flex;
     flex-direction: column;
     gap: var(--lg);

@@ -4,7 +4,7 @@
 
 :root{
     /* Measure */
-    --content-max-width: 1700px;
+    --content-min-width: 1700px;
 
     /*Fonts*/
     --lora: "Lora", serif;

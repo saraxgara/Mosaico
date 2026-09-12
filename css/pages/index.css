@@ -10,9 +10,15 @@
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column;
-    gap: var(--3xl);
+    justify-content: center;
     padding: var(--xl);
+}
+.hero-banner-box{
+    min-width: var(--content-min-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--3xl);
 }
 .hero-banner-content{
     width: 100%;
@@ -71,11 +77,13 @@
 
 /* COMMON SECTION */
 .home-section{
+    display: flex;
+    justify-content: center;
     background-color: var(--background-50);
     padding: var(--xl);
 }
 .home-section-content{
-    width: 100%;
+    min-width: var(--content-min-width);
     display: flex;
     flex-direction: column;
     gap: var(--3xl);

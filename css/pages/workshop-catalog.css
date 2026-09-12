@@ -8,10 +8,12 @@
 
 /* FILTER ROW */
 .workshop-filter-row-bar{
+    display: flex;
+    justify-content: center;
     padding: 0 var(--xl);
 }
 .workshop-filter-bar-content{
-    width: 100%;
+    min-width: var(--content-min-width);
     display: flex;
     justify-content: space-between;
 }
@@ -86,17 +88,22 @@
     cursor: pointer;
 }
 .workshop-input-sequence{
-    width: 58%;
+    min-width: 1116px;
     display: flex;
     justify-content: space-between;
 }
 
 /* FILTER + GALLERY */
 .workshop-gallery{
-    width: 100%;
+    min-width: var(--content-min-width);
+    display: flex;
+    justify-content: center;
+    padding: 0 var(--xl);
+}
+.workshop-gallery-box{
+    min-width: var(--content-min-width);
     display: flex;
     justify-content: space-between;
-    padding: 0 var(--xl);
 }
 
 /* ASIDE FILTER */
@@ -213,7 +220,6 @@
 
 /* GALLERY */
 .workshop-gallery-photos{
-    width: 58%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--xl);
@@ -221,7 +227,6 @@
 
 /* PAGINATION */
 .workshop-gallery-content{
-    width: 58%;
     display: flex;
     flex-direction: column;
     gap: var(--xl);

@@ -8,10 +8,12 @@
 
 /* FILTER ROW */
 .product-filter-row-bar{
+    display: flex;
+    justify-content: center;
     padding: 0 var(--xl);
 }
 .product-filter-bar-content{
-    width: 100%;
+    min-width: var(--content-min-width);
     display: flex;
     justify-content: space-between;
 }
@@ -86,17 +88,22 @@
     cursor: pointer;
 }
 .product-input-sequence{
-    width: 58%;
+    min-width: 1116px;
     display: flex;
     justify-content: space-between;
 }
 
 /* FILTER + GALLERY */
 .product-gallery{
-    width: 100%;
+    min-width: var(--content-min-width);
+    display: flex;
+    justify-content: center;
+    padding: 0 var(--xl);
+}
+.product-gallery-box{
+    min-width: var(--content-min-width);
     display: flex;
     justify-content: space-between;
-    padding: 0 var(--xl);
 }
 
 /* ASIDE FILTER */
@@ -237,7 +244,6 @@
 
 /* GALLERY */
 .product-gallery-photos{
-    width: 58%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--xl);
@@ -245,7 +251,6 @@
 
 /* PAGINATION */
 .product-gallery-content{
-    width: 58%;
     display: flex;
     flex-direction: column;
     gap: var(--xl);
@@ -259,6 +264,7 @@
     justify-content: center;
     align-items: center;
     gap: var(--sm);
+    padding: 0 0 var(--xl) 0;
 }
 .pagination-number{
     width: var(--md);

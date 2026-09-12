@@ -1,12 +1,13 @@
 .main-footer{
+    display: flex;
+    justify-content: center;
     padding: var(--xl);
     background-color: var(--background-50);
 }
 .footer-box{
-    width: 100%;
+    min-width: var(--content-min-width);
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .footer-logo-social{
     display: flex;
