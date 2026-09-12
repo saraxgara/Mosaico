@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 :root{
+    /* Measure */
+    --content-max-width: 1700px;
+
     /*Fonts*/
     --lora: "Lora", serif;
     --urbanist: "Urbanist", sans-serif;
@@ -29,7 +32,7 @@
     --6xl: 160px;
     --7xl: 192px;
 
-    /* Text Styles */
+    /* TEXT STYLES */
 
     /* Heading */
     --h1:
@@ -197,7 +200,7 @@
         12px
         var(--urbanist);
 
-    /* Colors */
+    /* COLORS */
 
     /* Primaries */
     --primary-50: #F7EFE9;

@@ -1,9 +1,11 @@
 .main-header{
+    display: flex;
+    justify-content: center;
     padding: var(--xl);
     background-color: var(--background-50);  
 }
 .header-box{
-    width: 100%;
+    min-width: var(--content-max-width);
     display: flex;
     justify-content: space-between;
 }
