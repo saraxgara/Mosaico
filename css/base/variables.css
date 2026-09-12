@@ -315,7 +315,7 @@
     --accent-900: #473911;
 
 
-    /*Buttons*/
+    /*BUTTONS*/
     
     /* Button Disabled */
     --button-default: var(--neutral-300);
@@ -344,7 +344,7 @@
     --button-outlined-active-primary: var(--primary-700);
     --button-outlined-active-secondary: var(--secondary-700);
 
-    /* Texts */
+    /* TEXTS */
 
     /* Text / Light */
     --text-light: var(--black);
