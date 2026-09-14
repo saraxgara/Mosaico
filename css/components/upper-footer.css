@@ -5,7 +5,9 @@
     background-color: var(--secondary-900);
 }
 .upper-footer-box{
-    min-width: var(--content-min-width);
+    width: 100%;
+    max-width: var(--content-max-width); 
+    min-width: var(--content-min-width); 
     display: flex;
     justify-content: space-between;
 }

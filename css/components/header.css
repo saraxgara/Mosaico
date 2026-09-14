@@ -5,7 +5,9 @@
     background-color: var(--background-50);  
 }
 .header-box{
-    min-width: var(--content-min-width);
+    width: 100%;
+    max-width: var(--content-max-width); 
+    min-width: var(--content-min-width); 
     display: flex;
     justify-content: space-between;
 }

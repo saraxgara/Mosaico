@@ -4,7 +4,8 @@
 
 :root{
     /* Measure */
-    --content-min-width: 1700px;
+    --content-max-width: 1700px;
+    --content-min-width: 900px;
 
     /*Fonts*/
     --lora: "Lora", serif;
@@ -318,7 +319,7 @@
     /*BUTTONS*/
     
     /* Button Disabled */
-    --button-default: var(--neutral-300);
+    --button-disabled: var(--neutral-300);
 
     /* Button / Solid / Default */
     --button-solid-default-primary: var(--primary-500);
