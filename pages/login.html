@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+    <body>
+        <header class="main-header center-content">
+            <div class="header-box center-box">
+                <img class="logo-desktop" src="/assets/logo/logo_desktop.png" alt="logo">
+                <ul class="main-header-nav">
+                        <li><a class="nav-list" href="#">Inicio</a></li>
+                        <li><a class="nav-list" href="#">Productos</a></li>
+                        <li><a class="nav-list" href="#">Talleres</a></li>
+                </ul>
+                <ul class="main-header-icons">
+                        <li><a href="#"><img class="nav-icon" src="/assets/icons/search.svg"/></a></li>
+                        <li><a href="#"><img class="nav-icon" src="/assets/icons/like-empty.svg"/></a></li>
+                        <li><a href="#"><img class="nav-icon" src="/assets/icons/shopping-bag.svg"/></a></li>
+                        <li><a href="#"><img class="nav-icon" src="/assets/icons/user.svg"/></a></li>
+                </ul>
+                <a href="#" class="main-header-btn">Contacto</a>
+            </div>
+        </header>
+        <main>
+            <section class="auth-section">
+                <div class="auth-card auth-card-login">
+                    <div class="auth-title-group">
+                        <h1 class="auth-title">Inicia sesión</h1>
+                        <p class="auth-subtitle">Accede a tu cuenta para continuar.</p>
+                    </div>
+                    <form class="auth-form">
+                        <div class="auth-field">
+                            <div class="auth-field-header">
+                                <label class="auth-label" for="login-email">Correo electrónico</label>
+                                <span class="auth-required">(obligatorio)</span>
+                            </div>
+                            <input class="auth-input" type="email" id="login-email" name="email" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <div class="auth-field">
+                            <div class="auth-field-header">
+                                <label class="auth-label" for="login-password">Contraseña</label>
+                                <span class="auth-required">(obligatorio)</span>
+                            </div>
+                            <div class="auth-password-group">
+                                <input class="auth-input" type="password" id="login-password" name="password" placeholder="Tu contraseña" required>
+                                <button class="auth-password-icon">
+                                    <img src="/assets/icons/eye-closed.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <a class="auth-forgot" href="#">¿Has olvidado tu contraseña?</a>
+                        <button class="auth-submit" type="submit">Iniciar sesión</button>
+                    </form>
+                    <p class="auth-switch">¿Todavía no tienes cuenta? <a class="auth-switch-link" href="#">¡Regístrate!</a></p>
+                </div>
+            </section>
+            <section class="upper-footer">
+                <div class="upper-footer-box">
+                    <div class="upper-footer-group">
+                        <img class="upper-footer-icon" src="/assets/icons/eco.svg">
+                        <div class="upper-footer-info">
+                            <p class="upper-footer-title">Productos sostenibles</p>
+                            <p class="upper-footer-text">Materiales de calidad y respetuosos con el medio ambiente</p>
+                        </div>
+                    </div>
+                    <div class="upper-footer-group">
+                        <img class="upper-footer-icon" src="/assets/icons/fabric.svg">
+                        <div class="upper-footer-info">
+                            <p class="upper-footer-title">Hecho a mano</p>
+                            <p class="upper-footer-text">Cada pieza está creada con dedicación por artesanos</p>
+                        </div>
+                    </div>
+                    <div class="upper-footer-group">
+                        <img class="upper-footer-icon" src="/assets/icons/smile.svg">
+                        <div class="upper-footer-info">
+                            <p class="upper-footer-title">Apoyo a creadores</p>
+                            <p class="upper-footer-text">Tu compra impulsa a pequeños negocios y talento local</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="footer-box">
+                <div class="footer-logo-social">
+                    <img class="logo-desktop" src="/assets/logo/logo_desktop.png" alt="logo">
+                    <ul class="social-icon-row">
+                            <li><a href="#"><img class="social-icon" src="/assets/icons/instagram.svg"/></a></li>
+                            <li><a href="#"><img class="social-icon" src="/assets/icons/facebook.svg"/></a></li>
+                            <li><a href="#"><img class="social-icon" src="/assets/icons/pinterest.svg"/></a></li>
+                            <li><a href="#"><img class="social-icon" src="/assets/icons/email.svg"/></a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <ul class="main-footer-list">
+                            <li class="footer-list-title">Comprar</li>
+                            <li><a class="foot-nav-list" href="#">Todos los productos</a></li>
+                            <li><a class="foot-nav-list" href="#">Cerámica</a></li>
+                            <li><a class="foot-nav-list" href="#">Velas</a></li>
+                            <li><a class="foot-nav-list" href="#">Decoración</a></li>
+                    </ul>
+                    <ul class="main-footer-list">
+                            <li class="footer-list-title">Talleres</li>
+                            <li><a class="foot-nav-list" href="#">Todos los talleres</a></li>
+                            <li><a class="foot-nav-list" href="#">Cerámica</a></li>
+                            <li><a class="foot-nav-list" href="#">Velas</a></li>
+                    </ul>
+                    <ul class="main-footer-list">
+                            <li class="footer-list-title">Información</li>
+                            <li><a class="foot-nav-list" href="#">Sobre nosotros</a></li>
+                            <li><a class="foot-nav-list" href="#">Envíos y devoluciones</a></li>
+                            <li><a class="foot-nav-list" href="#">Preguntas frecuentes</a></li>
+                            <li><a class="foot-nav-list" href="#">Contacto</a></li>
+                    </ul>
+                    <ul class="main-footer-subs">
+                        <div class="footer-sub-list">
+                            <li class="footer-list-title">Suscríbete a nuestra newsletter</li>
+                            <li><a class="foot-subs-nav" href="#">Recibe novedades, talleres y ofertas exclusivas</a></li>
+                        </div>
+                        <a class="foot-subs-btn" href="#">¡Suscríbete!</a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
