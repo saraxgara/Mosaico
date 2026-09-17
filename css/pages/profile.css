@@ -1,0 +1,177 @@
+/* PROFILE PAGE */
+.profile-page{
+    background-color: var(--background-50);
+    display: flex;
+    flex-direction: column;
+}
+.profile-section{
+    display: flex;
+    justify-content: center;
+    padding: var(--xl);
+}
+.profile-box{
+    width: 100%;
+    max-width: var(--content-max-width);
+    min-width: var(--content-min-width);
+    display: flex;
+    align-items: start;
+    gap: var(--xl);
+}
+
+/* PROFILE SIDEBAR */
+.profile-sidebar{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: var(--xl);
+    background-color: var(--white);
+    border: 1px solid var(--primary-100);
+    border-radius: var(--sm);
+}
+.profile-user{
+    display: flex;
+    align-items: center;
+    gap: var(--md);
+    padding-bottom: var(--lg);
+    border-bottom: 1px solid var(--primary-100);
+}
+.profile-avatar{
+    width: var(--6xl);
+    height: var(--6xl);
+    border-radius: 100%;
+    object-fit: cover;
+}
+.profile-user-info{
+    display: flex;
+    flex-direction: column;
+    gap: var(--2xs);
+}
+.profile-user-name{
+    color: var(--black);
+    font: var(--body-base-bold);
+}
+.profile-user-email{
+    color: var(--black);
+    font: var(--body-small-regular);
+}
+.profile-nav{
+    display: flex;
+    flex-direction: column;
+    gap: var(--xs);
+    padding-top: var(--lg);
+}
+.profile-nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: var(--xs);
+    list-style: none;
+}
+.profile-nav-link{
+    display: flex;
+    align-items: center;
+    gap: var(--sm);
+    padding: var(--sm);
+    border-radius: var(--xs);
+    color: var(--black);
+    font: var(--body-small-bold);
+    text-decoration: none;
+}
+.profile-nav-link:hover{
+    background-color: var(--primary-50);
+}
+.profile-nav-link-active{
+    color: var(--primary-500);
+    font-weight: bold;
+}
+.profile-nav-icon{
+    width: var(--md);
+}
+
+/* PROFILE CONTENT */
+.profile-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--lg);
+}
+.profile-form-card,
+.profile-account-card{
+    display: flex;
+    flex-direction: column;
+    gap: var(--xl);
+    padding: var(--xl);
+    background-color: var(--white);
+    border: 1px solid var(--primary-100);
+    border-radius: var(--sm);
+}
+.profile-form-title,
+.profile-account-title{
+    color: var(--black);
+    font: var(--h5);
+}
+.profile-form{
+    display: flex;
+    flex-direction: column;
+    gap: var(--lg);
+}
+.profile-row{
+    display: flex;
+    gap: var(--lg);
+}
+.profile-field{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--xs);
+}
+.profile-label{
+    color: var(--black);
+    font: var(--body-tiny-bold);
+}
+.profile-input,
+.profile-select{
+    width: 100%;
+    height: var(--2xl);
+    padding: 0 var(--md);
+    border: 1px solid var(--neutral-200);
+    border-radius: var(--xs);
+    color: var(--neutral-600);
+    font: var(--body-small-regular);
+}
+.profile-select{
+    cursor: pointer;
+}
+.profile-input:focus,
+.profile-select:focus{
+    outline: none;
+    border-color: var(--primary-500);
+}
+.profile-btn{
+    height: var(--2xl);
+    padding: 0 var(--xl);
+    border: none;
+    border-radius: var(--sm);
+    background-color: var(--primary-500);
+    color: var(--white);
+    font: var(--body-small-bold);
+    cursor: pointer;
+}
+
+/* ACCOUNT INFO */
+.profile-account-list{
+    display: flex;
+    flex-direction: column;
+    gap: var(--md);
+}
+.profile-account-item{
+    display: flex;
+    justify-content: space-between;
+}
+.profile-account-label{
+    color: var(--black);
+    font: var(--body-small-bold);
+}
+.profile-account-value{
+    color: var(--black);
+    font: var(--body-small-regular);
+}
