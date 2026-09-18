@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+    <body>
+        <header class="main-header center-content">
+            <div class="header-box center-box">
+                <img class="logo-desktop" src="/assets/logo/logo_desktop.png" alt="logo">
+                <ul class="main-header-nav">
+                        <li><a class="nav-list" href="#">Inicio</a></li>
+                        <li><a class="nav-list" href="#">Productos</a></li>
+                        <li><a class="nav-list" href="#">Talleres</a></li>
+                </ul>
+                <ul class="main-header-icons">
+                        <li><a href="#"><img class="nav-icon" src="/assets/icons/search.svg"/></a></li>
+                        <li><a href="#"><img class="nav-icon" src="/assets/icons/like-empty.svg"/></a></li>
+                        <li><a href="#"><img class="nav-icon" src="/assets/icons/shopping-bag.svg"/></a></li>
+                        <li><a href="#"><img class="nav-icon" src="/assets/icons/user.svg"/></a></li>
+                </ul>
+                <a href="#" class="main-header-btn">Contacto</a>
+            </div>
+        </header>
+        <main>
+            <div class="payment-page">
+                <section class="headline-section">
+                    <div class="headline-content">
+                        <div class="headline-upper-tab">
+                            <a class="headline-upper-tab-text" href="#">Inicio</a>
+                            <img class="headline-upper-tab-icon" src="/assets/icons/check-right.svg">
+                            <a class="headline-upper-tab-text" href="#">Carrito</a>
+                            <img class="headline-upper-tab-icon" src="/assets/icons/check-right.svg">
+                            <a class="headline-upper-tab-text" href="#">Pago</a>
+                        </div>
+                        <div class="headline-text">
+                            <h1 class="headline-main-title">Pago</h1>
+                            <p class="headline-main-text">Completa tu pago de forma segura.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="payment-section">
+                    <div class="payment-box">
+                        <section class="payment-form-column">
+                            <div class="payment-card">
+                                <h2 class="payment-card-title">1. Dirección de envío</h2>
+                                <div class="payment-options">
+                                    <label class="payment-option payment-option-selected">
+                                        <input class="payment-radio" type="radio" name="shipping-address" value="casa" checked>
+                                        <div class="payment-option-content">
+                                            <span class="payment-option-title">Casa</span>
+                                            <p class="payment-option-text">Avenida de la playa, 6<br>09718 Valencia, España</p>
+                                        </div>
+                                    </label>
+                                    <label class="payment-option">
+                                        <input class="payment-radio" type="radio" name="shipping-address" value="trabajo">
+                                        <div class="payment-option-content">
+                                            <span class="payment-option-title">Trabajo</span>
+                                            <p class="payment-option-text">Calle de Nueva Esperanza, 2<br>05478 Valencia, España</p>
+                                        </div>
+                                    </label>
+                                    <button class="payment-add-option" type="button">
+                                        <img src="/assets/icons/plus.svg" alt="">Añadir una nueva dirección
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="payment-card">
+                                <h2 class="payment-card-title">2. Método de pago</h2>
+                                <div class="payment-options">
+                                    <label class="payment-option payment-option-selected">
+                                        <input class="payment-radio" type="radio" name="payment-method" value="card" checked>
+                                        <div class="payment-option-content payment-option-content-row">
+                                            <span class="payment-option-title">Tarjeta de crédito o débito</span>
+                                        </div>
+                                        <div class="payment-option-icons">
+                                            <img class="payment-method-icon" src="/assets/icons/mastercard.svg" alt="Mastercard">
+                                            <img class="payment-method-icon" src="/assets/icons/visa.svg" alt="Visa">
+                                        </div>
+                                    </label>
+                                    <label class="payment-option">
+                                        <input class="payment-radio" type="radio" name="payment-method" value="paypal">
+                                        <div class="payment-option-content payment-option-content-row">
+                                            <span class="payment-option-title">Paypal</span>
+                                        </div>
+                                        <img class="payment-method-icon" src="/assets/icons/paypal.svg" alt="">
+                                    </label>
+                                    <label class="payment-option">
+                                        <input class="payment-radio" type="radio" name="payment-method" value="bizum">
+                                        <div class="payment-option-content payment-option-content-row">
+                                            <span class="payment-option-title">Bizum</span>
+                                        </div>
+                                        <img class="payment-method-icon" src="/assets/icons/bizum.svg" alt="">
+                                    </label>
+                                    <label class="payment-option">
+                                        <input class="payment-radio" type="radio" name="payment-method" value="apple-pay">
+                                        <div class="payment-option-content payment-option-content-row">
+                                            <span class="payment-option-title">Apple pay</span>
+                                        </div>
+                                        <img class="payment-method-icon" src="/assets/icons/apple-pay.svg" alt="">
+                                    </label>
+                                </div>
+                                <div class="payment-secure-banner">
+                                    <img class="payment-secure-icon" src="/assets/icons/security-primary-500.svg" alt="">
+                                    <span class="payment-secure-text">Pago 100% seguro</span>
+                                </div>
+                            </div>
+                        </section>
+                        <aside class="payment-summary-card">
+                            <h2 class="payment-summary-title">3. Resumen de tu pedido</h2>
+                            <div class="payment-summary-group">
+                                <h3 class="payment-summary-group-title">Productos (4)</h3>
+                                <ul class="payment-summary-list">
+                                    <li class="payment-summary-item">
+                                        <img class="payment-summary-image" src="/assets/images/taza_gres_moteado.png" alt="Taza artesanal">
+                                        <div class="payment-summary-item-info">
+                                            <h4 class="payment-summary-item-title">Taza artesanal</h4>
+                                            <p class="payment-summary-item-detail">Gres moteado</p>
+                                        </div>
+                                        <div class="payment-summary-item-price">
+                                            <span class="payment-summary-item-amount">22,00 €</span>
+                                            <span class="payment-summary-item-qty">Cant. 1</span>
+                                        </div>
+                                    </li>
+                                    <li class="payment-summary-item">
+                                        <img class="payment-summary-image" src="/assets/images/vela_ámbar.png" alt="Vela ámbar">
+                                        <div class="payment-summary-item-info">
+                                            <h4 class="payment-summary-item-title">Vela ámbar</h4>
+                                            <p class="payment-summary-item-detail">Cera de soja</p>
+                                        </div>
+                                        <div class="payment-summary-item-price">
+                                            <span class="payment-summary-item-amount">36,00 €</span>
+                                            <span class="payment-summary-item-qty">Cant. 2</span>
+                                        </div>
+                                    </li>
+                                    <li class="payment-summary-item">
+                                        <img class="payment-summary-image" src="/assets/images/plato_concha.png" alt="Plato concha">
+                                        <div class="payment-summary-item-info">
+                                            <h4 class="payment-summary-item-title">Plato concha</h4>
+                                            <p class="payment-summary-item-detail">Cerámica artesanal</p>
+                                        </div>
+                                        <div class="payment-summary-item-price">
+                                            <span class="payment-summary-item-amount">16,00 €</span>
+                                            <span class="payment-summary-item-qty">Cant. 1</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="payment-summary-group">
+                                <h3 class="payment-summary-group-title">Talleres (1)</h3>
+                                <ul class="payment-summary-list">
+                                    <li class="payment-summary-item">
+                                        <img class="payment-summary-image" src="/assets/images/iniciación_cerámica.png" alt="Taller de iniciación a la cerámica">
+                                        <div class="payment-summary-item-info">
+                                            <h4 class="payment-summary-item-title">Iniciación a la cerámica</h4>
+                                            <p class="payment-summary-item-detail">24 de mayo — 11:00 h a 13:30 h</p>
+                                            <p class="payment-summary-item-detail">Barcelona</p>
+                                        </div>
+                                        <div class="payment-summary-item-price">
+                                            <span class="payment-summary-item-amount">45,00 €</span>
+                                            <span class="payment-summary-item-qty">Cant. 1</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <dl class="payment-summary-totals">
+                                <div class="payment-summary-row">
+                                    <dt class="payment-summary-label">Subtotal de productos</dt>
+                                    <dd class="payment-summary-value">74,00 €</dd>
+                                </div>
+                                <div class="payment-summary-row">
+                                    <dt class="payment-summary-label">Subtotal de talleres</dt>
+                                    <dd class="payment-summary-value">45,00 €</dd>
+                                </div>
+                            </dl>
+                            <div class="payment-shipping-row">
+                                <div class="payment-shipping-group">
+                                    <div class="cart-shipping-label">
+                                        <span>Envío</span>
+                                        <button class="payment-info-btn" type="button">
+                                            <img src="/assets/icons/info.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <p class="payment-shipping-note">Envío estándar a España peninsular</p>
+                                </div>
+                                <span class="payment-shipping-value">Gratis</span>
+                            </div>
+                            <div class="payment-total-row">
+                                <div class="payment-total-group">
+                                    <p class="payment-total-label">Total</p>
+                                    <p class="payment-total-note">Impuestos incluidos</p>
+                                </div>
+                                <span class="payment-total-value">119,00 €</span>
+                            </div>
+                            <a class="payment-checkout-btn" href="/pago">
+                                <img src="/assets/icons/pay-white.svg" alt="">Proceder al pago
+                            </a>
+                        </aside>
+                    </div>
+                </section>
+            </div>
+            <section class="upper-footer">
+                <div class="upper-footer-box">
+                    <div class="upper-footer-group">
+                        <img class="upper-footer-icon" src="/assets/icons/eco.svg">
+                        <div class="upper-footer-info">
+                            <p class="upper-footer-title">Productos sostenibles</p>
+                            <p class="upper-footer-text">Materiales de calidad y respetuosos con el medio ambiente</p>
+                        </div>
+                    </div>
+                    <div class="upper-footer-group">
+                        <img class="upper-footer-icon" src="/assets/icons/fabric.svg">
+                        <div class="upper-footer-info">
+                            <p class="upper-footer-title">Hecho a mano</p>
+                            <p class="upper-footer-text">Cada pieza está creada con dedicación por artesanos</p>
+                        </div>
+                    </div>
+                    <div class="upper-footer-group">
+                        <img class="upper-footer-icon" src="/assets/icons/smile.svg">
+                        <div class="upper-footer-info">
+                            <p class="upper-footer-title">Apoyo a creadores</p>
+                            <p class="upper-footer-text">Tu compra impulsa a pequeños negocios y talento local</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="footer-box">
+                <div class="footer-logo-social">
+                    <img class="logo-desktop" src="/assets/logo/logo_desktop.png" alt="logo">
+                    <ul class="social-icon-row">
+                            <li><a href="#"><img class="social-icon" src="/assets/icons/instagram.svg"/></a></li>
+                            <li><a href="#"><img class="social-icon" src="/assets/icons/facebook.svg"/></a></li>
+                            <li><a href="#"><img class="social-icon" src="/assets/icons/pinterest.svg"/></a></li>
+                            <li><a href="#"><img class="social-icon" src="/assets/icons/email.svg"/></a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <ul class="main-footer-list">
+                            <li class="footer-list-title">Comprar</li>
+                            <li><a class="foot-nav-list" href="#">Todos los productos</a></li>
+                            <li><a class="foot-nav-list" href="#">Cerámica</a></li>
+                            <li><a class="foot-nav-list" href="#">Velas</a></li>
+                            <li><a class="foot-nav-list" href="#">Decoración</a></li>
+                    </ul>
+                    <ul class="main-footer-list">
+                            <li class="footer-list-title">Talleres</li>
+                            <li><a class="foot-nav-list" href="#">Todos los talleres</a></li>
+                            <li><a class="foot-nav-list" href="#">Cerámica</a></li>
+                            <li><a class="foot-nav-list" href="#">Velas</a></li>
+                    </ul>
+                    <ul class="main-footer-list">
+                            <li class="footer-list-title">Información</li>
+                            <li><a class="foot-nav-list" href="#">Sobre nosotros</a></li>
+                            <li><a class="foot-nav-list" href="#">Envíos y devoluciones</a></li>
+                            <li><a class="foot-nav-list" href="#">Preguntas frecuentes</a></li>
+                            <li><a class="foot-nav-list" href="#">Contacto</a></li>
+                    </ul>
+                    <ul class="main-footer-subs">
+                        <div class="footer-sub-list">
+                            <li class="footer-list-title">Suscríbete a nuestra newsletter</li>
+                            <li><a class="foot-subs-nav" href="#">Recibe novedades, talleres y ofertas exclusivas</a></li>
+                        </div>
+                        <a class="foot-subs-btn" href="#">¡Suscríbete!</a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -220,6 +220,7 @@
     background-color: var(--primary-500);
     color: var(--white);
     font: var(--body-small-bold);
+    cursor: pointer;
 }
 .cart-checkout-btn img,
 .cart-continue-btn img{
@@ -236,6 +237,7 @@
     background-color: transparent;
     color: var(--primary-500);
     font: var(--body-small-bold);
+    cursor: pointer;
 }
 
 /* FREE SHIPPING CONTENT */
