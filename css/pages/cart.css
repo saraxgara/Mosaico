@@ -121,7 +121,7 @@
 .cart-item-price{
     text-align: right;
     color: var(--black);
-    font: var(--body-base-bold);
+    font: var(--body-small-bold);
 }
 .cart-item-remove img{
     width: var(--lg);
