@@ -174,8 +174,11 @@
     font: var(--body-small-bold);
     cursor: pointer;
 }
+.sheet-page-product-cart-button:hover{
+    background-color: var(--primary-300);
+}
 .sheet-page-product-cart-button img{
-    width: var(--sm);
+    width: var(--md);
 }
 .sheet-page-product-favorite-button{
     height: var(--xl);
@@ -190,8 +193,12 @@
     font: var(--body-small-bold);
     cursor: pointer;
 }
+.sheet-page-product-favorite-button:hover{
+    border: 1px solid var(--primary-300);
+    color: var(--primary-300);
+}
 .sheet-page-product-favorite-button img{
-    width: var(--sm);
+    width: var(--md);
 }
 .sheet-page-product-benefits{
     display: flex;

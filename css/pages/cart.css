@@ -222,6 +222,9 @@
     font: var(--body-small-bold);
     cursor: pointer;
 }
+.cart-checkout-btn:hover{
+    background-color: var(--primary-300);
+}
 .cart-checkout-btn img,
 .cart-continue-btn img{
     width: var(--md);
@@ -238,6 +241,10 @@
     color: var(--primary-500);
     font: var(--body-small-bold);
     cursor: pointer;
+}
+.cart-continue-btn:hover{
+    border: 1px solid var(--primary-300);
+    color: var(--primary-300);
 }
 
 /* FREE SHIPPING CONTENT */

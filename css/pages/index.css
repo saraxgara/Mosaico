@@ -14,6 +14,8 @@
     padding: var(--xl);
 }
 .hero-banner-box{
+    width: 100%;
+    max-width: var(--content-max-width);
     min-width: var(--content-min-width);
     display: flex;
     flex-direction: column;
@@ -21,14 +23,9 @@
     gap: var(--3xl);
 }
 .hero-banner-content{
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: var(--xl);
-}
-.upper-tab{
-    color: var(--black);
-    font: var(--body-small-bold);
 }
 .home-main-title{
     color: var(--black);
@@ -69,10 +66,13 @@
     height: var(--lg);
     border: none;
     border-radius: var(--xs);
-    background-color: var(--button-solid-default-secondary);
+    background-color: var(--secondary-500);
     color: var(--white);
     font: var(--body-tiny-bold);
     cursor: pointer;
+}
+.home-input-btn:hover{
+    background-color: var(--secondary-300);
 }
 
 /* COMMON SECTION */
@@ -83,6 +83,8 @@
     padding: var(--xl);
 }
 .home-section-content{
+    width: 100%;
+    max-width: var(--content-max-width);
     min-width: var(--content-min-width);
     display: flex;
     flex-direction: column;
@@ -104,6 +106,9 @@
 .home-section-link-text{
     color: var(--secondary-500);
     font: var(--body-small-bold);
+}
+.home-section-link-text:hover{
+    color: var(--secondary-300);
 }
 .home-section-link-icon{
     width: var(--md);

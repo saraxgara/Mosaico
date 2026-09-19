@@ -49,6 +49,9 @@
     color: var(--white);
     font: var(--body-small-bold);
 }
+.confirmation-order-btn:hover{
+    background-color: var(--primary-300);
+}
 .confirmation-continue-btn{
     display: flex;
     align-items: center;
@@ -59,6 +62,10 @@
     border-radius: var(--sm);
     color: var(--primary-500);
     font: var(--body-small-bold);
+}
+.confirmation-continue-btn:hover{
+    border: 1px solid var(--primary-300);
+    color: var(--primary-300);
 }
 .confirmation-order-btn img,
 .confirmation-continue-btn img{

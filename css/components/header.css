@@ -1,3 +1,8 @@
+/* ACTIVE BTN */
+.nav-active{
+    border-bottom: 2px solid var(--primary-500);
+}
+
 .main-header{
     display: flex;
     justify-content: center;
@@ -30,6 +35,9 @@
     color: var(--primary-500);
     font: var(--body-small-bold);
 }
+.nav-list:hover{
+    color: var(--primary-300);
+}
 .nav-icon{
     width: var(--md);
 }
@@ -44,4 +52,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.main-header-btn:hover{
+    background-color: var(--primary-300);
 }

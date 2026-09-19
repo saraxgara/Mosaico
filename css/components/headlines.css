@@ -1,7 +1,7 @@
 .headline-section{
     display: flex;
     justify-content: center;
-    padding: 0 var(--xl);
+    padding: var(--xl);
 }
 .headline-content{
     width: 100%;
@@ -18,6 +18,9 @@
 .headline-upper-tab-text{
     color: var(--black);
     font: var(--body-small-bold);
+}
+.headline-upper-tab-text:hover{
+    border-bottom: 2px solid var(--black);
 }
 .headline-upper-tab-icon{
     width: var(--md);

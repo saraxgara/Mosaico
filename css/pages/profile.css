@@ -156,6 +156,9 @@
     font: var(--body-small-bold);
     cursor: pointer;
 }
+.profile-btn:hover{
+    background-color: var(--primary-300);
+}
 
 /* ACCOUNT INFO */
 .profile-account-list{

@@ -281,6 +281,9 @@
     font: var(--body-small-bold);
     cursor: pointer;
 }
+.payment-checkout-btn:hover{
+    background-color: var(--primary-300);
+}
 .payment-checkout-btn img{
     width: var(--md);
     margin-right: var(--xs);

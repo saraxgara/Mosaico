@@ -31,12 +31,19 @@
 .favorites-link{
     border: none;
     background-color: transparent;
-    padding: 0 0 var(--xs) 0;
     color: var(--primary-500);
     font: var(--body-small-bold);
     cursor: pointer;
 }
+.favorites-link:hover{
+    color: var(--primary-300);
+}
 .favorites-link-active{
+    border: none;
+    background-color: transparent;
+    color: var(--primary-500);
+    font: var(--body-small-bold);
+    cursor: pointer;
     color: var(--secondary-500);
     border-bottom: 2px solid var(--secondary-500);
 }
@@ -52,6 +59,9 @@
     color: var(--secondary-500);
     font: var(--body-small-bold);
     cursor: pointer;
+}
+.favorites-clear-tab-btn:hover{
+    border: 1px solid var(--secondary-500);
 }
 .favorites-tab-icon{
     width: var(--md);

@@ -87,7 +87,7 @@
     outline: none;
     border-color: var(--primary-500);
 }
-.contact-submit{
+.contact-btn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +100,10 @@
     font: var(--body-small-bold);
     cursor: pointer;
 }
-.contact-submit img{
+.contact-btn:hover{
+    background-color: var(--primary-300);
+}
+.contact-btn img{
     width: var(--md);
 }
 
@@ -152,6 +155,9 @@
     color: var(--secondary-500);
     font: var(--body-tiny-bold);
     text-decoration: none;
+}
+.contact-info-link:hover{
+    color: var(--secondary-300);
 }
 .contact-info-location-icon{
     width: var(--md)

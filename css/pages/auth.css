@@ -97,6 +97,9 @@
     color: var(--secondary-500);
     font: var(--body-small-bold);
 }
+.auth-forgot:hover{
+    color: var(--secondary-300);
+}
 .auth-checkbox-field{
     display: flex;
     align-items: start;
@@ -115,7 +118,10 @@
     color: var(--primary-500);
     font: var(--body-small-bold);
 }
-.auth-submit{
+.auth-inline-link:hover{
+    color: var(--primary-300);
+}
+.auth-btn{
     height: var(--2xl);
     border: none;
     border-radius: var(--sm);
@@ -123,6 +129,9 @@
     color: var(--white);
     font: var(--body-small-bold);
     cursor: pointer;
+}
+.auth-btn:hover{
+    background-color: var(--primary-300);
 }
 .auth-switch{
     text-align: center;
@@ -132,4 +141,7 @@
 .auth-switch-link{
     color: var(--secondary-500);
     font: var(--body-small-bold);
+}
+.auth-switch-link:hover{
+    color: var(--secondary-300);
 }

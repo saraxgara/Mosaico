@@ -41,9 +41,15 @@
     font: var(--body-small-bold);
     color: var(--primary-500);
 }
+.foot-nav-list:hover{
+    color: var(--primary-300);
+}
 .foot-subs-nav{
     font: var(--body-small-bold);
     color: var(--background-900);
+}
+.foot-subs-nav:hover{
+    color: var(--background-700);
 }
 .main-footer-subs{
     display: flex;
@@ -66,4 +72,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.foot-subs-btn:hover{
+    background-color: var(--secondary-300);
 }
