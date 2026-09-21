@@ -66,6 +66,11 @@
     flex-direction: column;
     gap: var(--sm);
 }
+.sheet-page-product-header{
+    display: flex;
+    flex-direction: column;
+    gap: var(--sm);
+}
 .sheet-page-product-title{
     color: var(--black);
     font: var(--h3);
@@ -90,7 +95,6 @@
 }
 .sheet-page-product-stars img{
     width: var(--lg);
-    height: var(--lg);
 }
 .sheet-page-product-rating-count{
     color: var(--black);
@@ -215,6 +219,11 @@
 }
 .sheet-page-product-benefit-icon{
     width: var(--lg);
+}
+.sheet-page-product-benefit-content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--xs);
 }
 .sheet-page-product-benefit-title{
     color: var(--black);
@@ -406,12 +415,9 @@
     background-color: transparent;
     cursor: pointer;
 }
-.sheet-page-schedule-slot-time{
-    color: var(--black);
-    font: var(--body-base-regular);
-}
+.sheet-page-schedule-slot-time,
 .sheet-page-schedule-slot-availability{
-    color: var(--neutral-500);
+    color: var(--black);
     font: var(--body-base-regular);
 }
 .sheet-page-schedule-quantity{
@@ -607,4 +613,193 @@
 .sheet-page-review-text{
     color: var(--vlack);
     font: var(--body-small-regular);
+}
+
+/* MEDIA QUERY */
+@media (max-width: 680px){
+
+    /* MAIN CONTENT SHEET */
+    .sheet-page-content{
+        padding: var(--md) var(--sm);
+    }
+    .sheet-page-box{
+        min-width: 0;
+        max-width: none;
+    }
+
+    /* PRODUCT / GALLERY + INFO */
+    .sheet-page-product{
+        flex-direction: column;
+        gap: var(--lg);
+    }
+    .sheet-page-product-main-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .sheet-page-product-thumbnail{
+        width: 60px;
+        height: 60px;
+    }
+    .sheet-page-product-stars img{
+        width: var(--md);
+    }
+    .sheet-page-product-rating-count{
+        font: var(--body-small-bold);
+    }
+    .sheet-page-icon-check{
+        width: var(--lg);
+    }
+    .sheet-page-product-information{
+        width: 100%;
+    }
+    .sheet-page-product-title{
+        font: var(--h4);
+    }
+    .sheet-page-product-material{
+        font: var(--h5);
+    }
+    .sheet-page-product-price{
+        font: var(--body-base-bold);
+    }
+    .sheet-page-product-description{
+        font: var(--body-small-regular);
+    }
+    .sheet-page-product-quantity-label{
+        font: var(--body-small-bold);
+    }
+
+    /* BENEFITS */
+    .sheet-page-product-benefits{
+        flex-direction: column;
+        gap: var(--md);
+    }
+    .sheet-page-product-benefit{
+        justify-content: start;
+        align-items: center;
+        padding: var(--md) 0;
+        border-right: none;
+        border-bottom: 1px solid var(--primary-100);
+    }
+    .sheet-page-product-feature-icon{
+        width: var(--md);
+    }
+    .sheet-page-product-benefit:last-child{
+        border-bottom: none;
+    }
+    .sheet-page-product-benefit-title{
+        font: var(--body-tiny-bold);
+    }
+    .sheet-page-product-benefit-text{
+        font: var(--body-superTiny-regular);
+    }
+
+    /* DESCRIPTION */
+    .sheet-page-description-columns{
+        flex-direction: column;
+        gap: var(--xl);
+    }
+    .sheet-page-description-text{
+        font: var(--body-small-regular);
+    }
+    .sheet-page-description-icon{
+        width: var(--md);
+    }
+
+    /* BOOKING */
+    .sheet-page-booking{
+        flex-direction: column;
+        gap: var(--xl);
+    }
+    .sheet-page-calendar-box{
+        width: 100%;
+    }
+    .calendar-day{
+        width: var(--lg);
+        height: var(--lg);
+    }
+    .calendar-day button{
+        width: var(--lg);
+        height: var(--lg);
+    }
+    .sheet-page-calendar-arrow img{
+        width: var(--xl);
+    }
+    .sheet-page-calendar-month{
+        font: var(--body-small-bold);
+    }
+    .sheet-page-calendar-table th{
+        font: var(--body-small-bold);
+    }
+    .calendar-day,
+    .calendar-day button{
+        height: var(--lg);
+        font: var(--body-small-bold);
+    }
+    .sheet-page-calendar-legend-item{
+        font: var(--body-tiny-regular);
+    }
+    .legend-dot{
+        width: var(--md);
+        height: var(--md);
+    }
+    .sheet-page-schedule-date,
+    .sheet-page-schedule-quantity-label{
+        font: var(--body-small-bold);
+    }
+    .sheet-page-schedule-slot-time,
+    .sheet-page-schedule-slot-availability{
+        font: var(--body-small-regular);
+    }
+
+    /* REVIEWS */
+    .sheet-page-reviews-content{
+        flex-direction: column;
+        gap: var(--xl);
+    }
+    .sheet-page-review-bar{
+        flex: 1;
+        width: auto;
+    }
+    .sheet-page-review-avatar{
+        width: 48px;
+        height: 48px;
+        font: var(--body-base-bold);
+        flex-shrink: 0;
+    }
+    .sheet-page-review-header{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: var(--2xs);
+    }
+    .sheet-page-review-author{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--2xs);
+    }
+    .sheet-page-reviews-stars img{
+        width: var(--md);
+    }
+    .sheet-page-reviews-score{
+        font: var(--body-small-bold);
+    }
+    .sheet-page-reviews-distribution{
+        gap: var(--xs);
+    }
+    .sheet-page-review-distribution img{
+        width: var(--sm);
+    }
+    .sheet-page-review-number,
+    .sheet-page-review-count-number{
+        font: var(--body-tiny-bold);
+    }
+    .sheet-page-review-bar{
+        height: 12px;
+    }
+    .sheet-page-review-bar-fill{
+        display: block;
+        width: 80%;
+        height: 100%;
+        background-color: var(--primary-500);
+        border-radius: 100px;
+    }
 }
