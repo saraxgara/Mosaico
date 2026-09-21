@@ -38,3 +38,26 @@
     color: var(--black);
     font: var(--body-base-regular);
 }
+
+/* MEDIA QUERY */
+@media (max-width: 680px){
+    .headline-section{
+        padding: var(--md) var(--sm);
+    }
+    .headline-content{
+        min-width: 0;
+        max-width: none;
+    }
+    .headline-upper-tab{
+        gap: var(--xs);
+    }
+    .headline-upper-tab-text{
+        font: var(--body-tiny-bold);
+    }
+    .headline-main-title{
+        font: var(--h4);
+    }
+    .headline-main-text{
+        font: var(--body-small-regular);
+    }
+}

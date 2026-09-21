@@ -7,22 +7,38 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
     <body>
-        <header class="main-header">
-            <div class="header-box">
-                <img class="logo-desktop" src="/assets/logo/logo_desktop.png" alt="logo">
+        <header class="main-header center-content">
+            <div class="header-box center-box">
+                <img class="logo-desktop" src="/assets/logo/logo_desktop.png" alt="MosaiCo">
+                <img class="logo-mobile" src="/assets/logo/logo_mobile.png" alt="logo">
                 <ul class="main-header-nav">
                         <li><a class="nav-list" href="/index.html">Inicio</a></li>
                         <li><a class="nav-list" href="/pages/product-catalog.html">Productos</a></li>
                         <li><a class="nav-list" href="/pages/workshop-catalog.html">Talleres</a></li>
                 </ul>
                 <ul class="main-header-icons">
-                        <li><a href="#"><img class="nav-icon" src="/assets/icons/search.svg"/></a></li>
                         <li><a href="/pages/favorites.html"><img class="nav-icon" src="/assets/icons/like-empty.svg"/></a></li>
                         <li><a href="#"><img class="nav-icon" src="/assets/icons/shopping-bag.svg"/></a></li>
                         <li><a href="#"><img class="nav-icon" src="/assets/icons/user.svg"/></a></li>
                 </ul>
                 <a href="/pages/contact.html" class="main-header-btn">Contacto</a>
+                <button class="header-menu-toggle" type="button">
+                    <img src="/assets/icons/menu.svg" alt="Abrir menú">
+                </button>
             </div>
+            <nav id="mobile-menu" class="header-mobile-menu oculto">
+                <ul class="header-mobile-nav">
+                    <li><a class="nav-list" href="/index.html">Inicio</a></li>
+                    <li><a class="nav-list" href="/pages/product-catalog.html">Productos</a></li>
+                    <li><a class="nav-list" href="/pages/workshop-catalog.html">Talleres</a></li>
+                </ul>
+                <ul class="header-mobile-icons">
+                    <li><a href="/pages/favorites.html"><img class="nav-icon" src="/assets/icons/like-empty.svg"/></a></li>
+                    <li><a href="#"><img class="nav-icon" src="/assets/icons/shopping-bag.svg"/></a></li>
+                    <li><a href="#"><img class="nav-icon" src="/assets/icons/user.svg"/></a></li>
+                </ul>
+                <a href="/pages/contact.html" class="main-header-btn">Contacto</a>
+            </nav>
         </header>
         <main>
             <div class="sheet-page-content">

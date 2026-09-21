@@ -33,3 +33,25 @@
     color: var(--white);
     font: var(--body-small-regular);
 }
+
+/* MEDIA QUERY */
+@media (max-width: 680px){
+    .upper-footer{
+        padding: var(--xl) var(--sm);
+    }
+    .upper-footer-box{
+        max-width: none; 
+        min-width: 0; 
+        flex-direction: column;
+        gap: var(--md);
+    }
+    .upper-footer-icon{
+        width: var(--lg);
+    }
+    .upper-footer-title{
+        font: var(--body-small-bold);
+    }
+    .upper-footer-text{
+        font: var(--body-tiny-regular);
+    }
+}

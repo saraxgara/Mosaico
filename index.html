@@ -7,30 +7,48 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
     <body>
-        <header class="main-header">
-            <div class="header-box">
-                <img class="logo-desktop" src="/assets/logo/logo_desktop.png" alt="logo">
+        <header class="main-header center-content">
+            <div class="header-box center-box">
+                <img class="logo-desktop" src="/assets/logo/logo_desktop.png" alt="MosaiCo">
+                <img class="logo-mobile" src="/assets/logo/logo_mobile.png" alt="logo">
                 <ul class="main-header-nav">
-                        <li><a class="nav-list nav-active" href="/index.html">Inicio</a></li>
+                        <li><a class="nav-list" href="#">Inicio</a></li>
                         <li><a class="nav-list" href="/pages/product-catalog.html">Productos</a></li>
                         <li><a class="nav-list" href="/pages/workshop-catalog.html">Talleres</a></li>
                 </ul>
                 <ul class="main-header-icons">
-                        <li><a href="#"><img class="nav-icon" src="/assets/icons/search.svg"/></a></li>
                         <li><a href="/pages/favorites.html"><img class="nav-icon" src="/assets/icons/like-empty.svg"/></a></li>
                         <li><a href="#"><img class="nav-icon" src="/assets/icons/shopping-bag.svg"/></a></li>
                         <li><a href="#"><img class="nav-icon" src="/assets/icons/user.svg"/></a></li>
                 </ul>
                 <a href="/pages/contact.html" class="main-header-btn">Contacto</a>
+                <button class="header-menu-toggle" type="button">
+                    <img src="/assets/icons/menu.svg" alt="Abrir menú">
+                </button>
             </div>
+            <nav id="mobile-menu" class="header-mobile-menu oculto">
+                <ul class="header-mobile-nav">
+                    <li><a class="nav-list" href="#">Inicio</a></li>
+                    <li><a class="nav-list" href="/pages/product-catalog.html">Productos</a></li>
+                    <li><a class="nav-list" href="/pages/workshop-catalog.html">Talleres</a></li>
+                </ul>
+                <ul class="header-mobile-icons">
+                    <li><a href="/pages/favorites.html"><img class="nav-icon" src="/assets/icons/like-empty.svg"/></a></li>
+                    <li><a href="#"><img class="nav-icon" src="/assets/icons/shopping-bag.svg"/></a></li>
+                    <li><a href="#"><img class="nav-icon" src="/assets/icons/user.svg"/></a></li>
+                </ul>
+                <a href="/pages/contact.html" class="main-header-btn">Contacto</a>
+            </nav>
         </header>
         <main>
             <section class="hero-banner">
                 <div class="hero-banner-box">
                     <div class="hero-banner-content">
-                        <h1 class="home-main-title">Creatividad que conecta</h1>
-                        <span class="home-main-under-title">hecha a mano</span>
-                        <p class="home-main-text">Descubre productos únicos de cerámica, velas y talleres<br> para despertar tu creatividad</p>
+                        <div class="hero-banner-title-group">
+                            <h1 class="home-main-title">Creatividad que conecta</h1>
+                            <span class="home-main-under-title">hecha a mano</span>
+                        </div>
+                        <p class="home-main-text">Descubre productos únicos de cerámica, velas y talleres<br class="break-desktop"> para despertar tu creatividad</p>
                     </div>
                     <form class="home-input-searcher">
                         <img class="home-input-icon" src="/assets/icons/search.svg">
@@ -114,7 +132,7 @@
                                     <div class="product-card-price">
                                         <span>22,00 €</span>
                                         <button class="product-card-cart" type="button">
-                                            <img src="/assets/icons/products.svg" alt="Añadir al carrito">
+                                            <img src="/assets/icons/products-filled.svg" alt="Añadir al carrito">
                                         </button>
                                     </div>
                                 </div>
@@ -134,7 +152,7 @@
                             <div class="product-card-image-container">
                                 <img class="product-card-image" src="/assets/images/jarrón_asas.png" alt="Taza artesanal">
                                 <button class="product-card-favorite" type="button">
-                                    <img src="/assets/icons/like-filled.svg" alt="Añadir a favoritos">
+                                    <img src="/assets/icons/like-empty.svg" alt="Añadir a favoritos">
                                 </button>
                             </div>
                             <div class="product-card-info">
@@ -166,7 +184,7 @@
                             <div class="product-card-image-container">
                                 <img class="product-card-image" src="/assets/images/vela_ámbar.png" alt="Taza artesanal">
                                 <button class="product-card-favorite" type="button">
-                                    <img src="/assets/icons/like-filled.svg" alt="Añadir a favoritos">
+                                    <img src="/assets/icons/like-empty.svg" alt="Añadir a favoritos">
                                 </button>
                             </div>
                             <div class="product-card-info">
@@ -178,7 +196,7 @@
                                     <div class="product-card-price">
                                         <span>18,00 €</span>
                                         <button class="product-card-cart" type="button">
-                                            <img src="/assets/icons/products.svg" alt="Añadir al carrito">
+                                            <img src="/assets/icons/products-filled.svg" alt="Añadir al carrito">
                                         </button>
                                     </div>
                                 </div>
@@ -210,7 +228,7 @@
                                     <div class="product-card-price">
                                         <span>16,00 €</span>
                                         <button class="product-card-cart" type="button">
-                                            <img src="/assets/icons/products.svg" alt="Añadir al carrito">
+                                            <img src="/assets/icons/products-filled.svg" alt="Añadir al carrito">
                                         </button>
                                     </div>
                                 </div>
@@ -267,7 +285,7 @@
                                 <div class="workshop-card-price">
                                     <span>45,00 €</span>
                                     <button class="workshop-card-cart" type="button">
-                                        <img src="/assets/icons/products.svg" alt="Añadir al carrito">
+                                        <img src="/assets/icons/products-filled.svg" alt="Añadir al carrito">
                                     </button>
                                 </div>
                             </div>
@@ -280,7 +298,7 @@
                                     <span class="workshop-card-date-month">MAY</span>
                                 </div>
                                 <button class="workshop-card-favorite" type="button">
-                                    <img src="/assets/icons/like-filled.svg" alt="Añadir a favoritos">
+                                    <img src="/assets/icons/like-empty.svg" alt="Añadir a favoritos">
                                 </button>
                             </div>
                             <div class="workshop-card-info">
@@ -346,7 +364,7 @@
                                     <span class="workshop-card-date-month">JUN</span>
                                 </div>
                                 <button class="workshop-card-favorite" type="button">
-                                    <img src="/assets/icons/like-filled.svg" alt="Añadir a favoritos">
+                                    <img src="/assets/icons/like-empty.svg" alt="Añadir a favoritos">
                                 </button>
                             </div>
                             <div class="workshop-card-info">

@@ -205,3 +205,93 @@
 .workshop-card-cart img{
     width: var(--md);
 }
+
+/* MEDIA QUERY */
+@media (max-width: 680px){
+
+    /* PRODUCT CARD */
+    .product-card{
+        width: 100%;
+        height: 100%;
+    }
+    .product-card-image-container{
+        height: auto;
+        aspect-ratio: 340 / 290;
+    }
+    .product-card-favorite{
+        top: var(--sm);
+        right: var(--sm);
+        width: var(--lg);
+        height: var(--lg);
+    }
+    .product-card-info{
+        gap: var(--md);
+        padding: var(--sm);
+    }
+    .product-card-title{
+        font: var(--body-superTiny-bold);
+    }
+    .product-card-material{
+        font: var(--body-extraTiny-regular);
+    }
+    .product-card-price{
+        font: var(--body-superTiny-bold);
+    }
+    .product-card-rating{
+        gap: var(--2xs);
+    }
+    .product-card-stars{
+        gap: var(--3xs);
+    }
+    .product-star-icon{
+        width: var(--sm);
+    }
+    .product-card-reviews{
+        font: var(--body-extraTiny-regular);
+    }
+
+    /* WORKSHOP CARD */
+    .workshop-card{
+        width: 100%;
+        height: 100%;
+    }
+    .workshop-card-image-container{
+        height: auto;
+        aspect-ratio: 340 / 290;
+    }
+    .workshop-card-date{
+        position: absolute;
+        top: var(--sm);
+        left: var(--sm);
+        width: var(--2xl);
+        height: var(--2xl);
+    }
+    .workshop-card-favorite{
+        top: var(--sm);
+        right: var(--sm);
+        width: var(--lg);
+        height: var(--lg);
+    }
+    .workshop-card-date-day{
+        font: var(--body-superTiny-bold);
+    }
+    .workshop-card-date-month{
+        font: var(--body-extraTiny-regular);
+    }
+    .workshop-card-info{
+        gap: var(--md);
+        padding: var(--sm);
+    }
+    .workshop-card-title{
+        font: var(--body-superTiny-bold);
+    }
+    .workshop-card-detail{
+        font: var(--body-extraTiny-regular);
+    }
+    .workshop-card-detail img{
+        width: 12px;
+    }
+    .workshop-card-price{
+        font: var(--body-superTiny-bold);
+    }
+}

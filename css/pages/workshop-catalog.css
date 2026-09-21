@@ -35,6 +35,9 @@
     font: var(--body-small-bold);
     cursor: pointer;
 }
+.workshop-tab-filter-btn:hover{
+    border: 1px solid var(--primary-500);
+}
 .workshop-input-searcher{
     width: 448px;
     height: var(--xl);
@@ -91,6 +94,9 @@
     color: var(--secondary-500);
     font: var(--body-small-bold);
     cursor: pointer;
+}
+.workshop-sequence-tab-btn:hover{
+    border: 1px solid var(--secondary-500);
 }
 .workshop-input-sequence{
     min-width: 1116px;
@@ -240,4 +246,74 @@
 .workshop-gallery-pagination{
     display: flex;
     justify-content: center;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 680px){
+
+    /* PRODUCT PAGE */
+    .workshop-page{
+        gap: var(--lg);
+    }
+    .workshop-input-searcher{
+        width: 100%;
+    }
+    .workshop-input-btn{
+        display: none;
+    }
+
+    /* FILTER ROW */
+    .workshop-filter-row-bar{
+        padding: var(--md) var(--sm);
+    }
+    .workshop-filter-bar-content{
+        min-width: 0;
+        max-width: none;
+        flex-direction: column;
+        gap: var(--md);
+    }
+    .workshop-input-sequence{
+        min-width: 0;
+        flex-direction: column;
+        gap: var(--md);
+    }
+    .workshop-input-searcher{
+        width: 100%;
+    }
+    .workshop-tab-filter-btn{
+        width: 100%;
+        justify-content: center;
+    }
+    .workshop-sequence{
+        justify-content: space-between;
+    }
+
+    /* FILTER + GALLERY */
+    .workshop-gallery{
+        padding: var(--md) var(--sm);
+    }
+    .workshop-gallery-box{
+        min-width: 0;
+        max-width: none;
+    }
+    .workshop-sequence-tab-btn{
+        height: 0;
+        padding: 0;
+    }
+
+    /* ASIDE */
+    .workshop-aside{
+        display: none;
+    }
+
+    /* GALLERY GRID */
+    .workshop-gallery-photos{
+        grid-template-columns: 1fr 1fr;
+        gap: var(--lg);
+    }
+
+    /* PAGINATION */
+    .pagination{
+        gap: var(--xs);
+    }
 }

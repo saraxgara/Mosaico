@@ -467,6 +467,9 @@
     color: var(--secondary-500);
     font: var(--body-small-bold);
 }
+.sheet-page-reviews-link-text:hover{
+    color: var(--secondary-300);
+}
 .sheet-page-reviews-link img{
     width: var(--md);
 }
