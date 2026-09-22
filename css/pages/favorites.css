@@ -80,3 +80,38 @@
 .favorites-grid .workshop-card{
     width: 100%;
 }
+
+/* MEDIA QUERY */
+@media (max-width: 680px){
+
+    /* CONTACT PAGE */
+    .favorites-section{
+        padding: var(--md) var(--sm);
+    }
+    .favorites-box{
+        min-width: 0;
+        max-width: none;
+    }
+
+    /* TOOLBAR */
+    .favorites-toolbar{
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--md);
+    }
+    .favorites-tabs{
+        flex-direction: column;
+        align-items: start;
+        gap: var(--sm);
+    }
+    .favorites-clear-tab-btn{
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* GRID */
+    .favorites-grid{
+        grid-template-columns: 1fr 1fr;
+        gap: var(--lg);
+    }
+}

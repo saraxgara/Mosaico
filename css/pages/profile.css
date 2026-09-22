@@ -135,7 +135,7 @@
     padding: 0 var(--md);
     border: 1px solid var(--neutral-200);
     border-radius: var(--xs);
-    color: var(--neutral-600);
+    color: var(--black);
     font: var(--body-small-regular);
 }
 .profile-select{
@@ -177,4 +177,50 @@
 .profile-account-value{
     color: var(--black);
     font: var(--body-small-regular);
+}
+
+/* MEDIA QUERY */
+@media (max-width: 680px){
+
+    /* PROFILE PAGE */
+    .profile-section{
+        padding: var(--md) var(--sm);
+    }
+    .profile-box{
+        min-width: 0;
+        max-width: none;
+        flex-direction: column;
+        gap: var(--lg);
+    }
+    .profile-user{
+        flex-direction: column;
+    }
+    .profile-sidebar,
+    .profile-form-card,
+    .profile-account-card{
+        width: 100%;
+        padding: var(--lg);
+    }
+
+    /* PROFILE CONTENT */
+    .profile-content{
+        width: 100%;
+    }
+    .profile-row{
+        flex-direction: column;
+        gap: var(--lg);
+    }
+    .profile-label{
+        font: var(--body-superTiny-bold);
+    }
+    .profile-input,
+    .profile-select{
+        font: var(--body-tiny-regular);
+    }
+
+    /* ACCOUNT INFO */
+    .profile-account-item{
+        flex-direction: column;
+        gap: var(--2xs);
+    }
 }
