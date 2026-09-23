@@ -288,3 +288,39 @@
     width: var(--md);
     margin-right: var(--xs);
 }
+
+/* MEDIA QUERY */
+@media (max-width: 680px){
+    .payment-section{
+        padding: var(--md) var(--sm);
+    }
+    .payment-box{
+        min-width: 0;
+        max-width: none;
+        flex-direction: column;
+    }
+
+    /* PAYMENT CARD OPTIONS */
+    .payment-option{
+        flex-wrap: wrap;
+    }
+    .payment-option-icons{
+        width: 100%;
+        margin-top: var(--xs);
+    }
+    .payment-summary-card,
+    .payment-card{
+        padding: var(--lg);
+    }
+
+    /* PAYMENT SUMMARY ITEMS */
+    .payment-summary-item{
+        flex-wrap: wrap;
+    }
+    .payment-summary-item-price{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}

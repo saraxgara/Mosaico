@@ -262,3 +262,52 @@
     color: var(--secondary-500);
     font: var(--body-base-bold);
 }
+
+/* MEDIA QUERY */
+@media (max-width: 680px){
+    .confirmation-section{
+        padding: var(--md) var(--sm);
+    }
+    .confirmation-box{
+        min-width: 0;
+        max-width: none;
+    }
+    .confirmation-items-card,
+    .confirmation-details-card{
+        padding: var(--lg);
+    }
+
+    /* CONFIRMATION INFO */
+    .confirmation-actions{
+        flex-direction: column;
+    }
+    .confirmation-order-number{
+        display: flex;
+        flex-direction: column;
+        gap: var(--xs);
+    }
+    .confirmation-order-btn,
+    .confirmation-continue-btn{
+        justify-content: center;
+    }
+
+    /* CONFIRMATION CONTENT */
+    .confirmation-columns{
+        flex-direction: column;
+    }
+
+    /* CONFIRMATION ITEMS */
+    .confirmation-item{
+        flex-wrap: wrap;
+    }
+    .confirmation-item-price{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .confirmation-delivery-row{
+        flex-direction: column;
+        gap: var(--xs);
+    }
+}
