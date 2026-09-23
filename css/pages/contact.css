@@ -68,7 +68,7 @@
     border: 1px solid var(--neutral-200);
     border-radius: var(--xs);
     color: var(--black);
-    font: var(--body-base-regular);
+    font: var(--body-small-regular);
 }
 .contact-input{
     height: var(--2xl);
