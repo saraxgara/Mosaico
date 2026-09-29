@@ -290,7 +290,7 @@
     color: var(--white);
     border-radius: 100%;
 }
-.pagination-arrow {
+.pagination-arrow{
     border: none;
     background: transparent;
     cursor: pointer;
@@ -367,4 +367,176 @@
     .pagination{
         gap: var(--xs);
     }
+}
+
+/* LOADING PRODUCT PAGE */
+.product-loading-headline{
+    pointer-events: none;
+}
+.product-loading-breadcrumb{
+    width: var(--4xl);
+    height: var(--sm);
+    background-color: var(--neutral-100);
+}
+.product-loading-title{
+    width: 260px;
+    height: var(--xl);
+    background-color: var(--neutral-100);
+}
+.product-loading-subtitle{
+    width: 260px;
+    height: var(--md);
+    background-color: var(--neutral-100);
+}
+.product-loading-filter-row{
+    pointer-events: none;
+}
+.product-loading-filter-button{
+    width: var(--5xl);
+    height: var(--xl);
+    border-radius: var(--sm);
+    background-color: var(--neutral-100);
+}
+.product-loading-search{
+    width: 448px;
+    height: var(--xl);
+    border-radius: var(--sm);
+    background-color: var(--neutral-100);
+}
+.product-loading-order-label{
+    width: var(--3xl);
+    height: var(--sm);
+    background-color: var(--neutral-100);
+}
+.product-loading-order-button{
+    width: var(--6xl);
+    height: var(--xl);
+    border-radius: var(--sm);
+    background-color: var(--neutral-100);
+}
+.product-loading-filter-row .product-sequence{
+    gap: var(--sm);
+}
+.product-loading-aside-title{
+    width: var(--5xl);
+    height: var(--sm);
+    background-color: var(--neutral-100);
+}
+.product-loading-options{
+    display: flex;
+    flex-direction: column;
+    gap: var(--md);
+}
+.product-loading-option{
+    display: flex;
+    align-items: center;
+    gap: var(--xs);
+}
+.product-loading-checkbox{
+    width: var(--md);
+    height: var(--md);
+    background-color: var(--neutral-200);
+}
+.product-loading-option-text{
+    width: var(--3xl);
+    height: var(--sm);
+    background-color: var(--neutral-100);
+}
+.product-loading-option-text-long{
+    width: var(--5xl);
+}
+.product-loading-price{
+    width: 100%;
+}
+.product-loading-price-track{
+    width: 100%;
+    height: var(--sm);
+    margin-bottom: var(--md);
+    background-color: var(--neutral-100);
+}
+.product-loading-price-values{
+    display: flex;
+    justify-content: space-between;
+}
+.product-loading-price-values span{
+    width: var(--lg);
+    height: var(--sm);
+    background-color: var(--neutral-100);
+}
+.product-loading-colors{
+    width: var(--4xl);
+    height: var(--sm);
+    background-color: var(--neutral-100);
+    display: flex;
+    gap: var(--xs);
+    max-width: var(--5xl);
+}
+.product-loading-colors span{
+    width: var(--md);
+    height: var(--md);
+    border-radius: 100%;
+    background-color: var(--neutral-200);
+}
+.product-loading-ratings{
+    display: flex;
+    flex-direction: column;
+    gap: var(--md);
+}
+.product-loading-rating{
+    display: flex;
+    align-items: center;
+    gap: var(--xs);
+}
+.product-loading-stars{
+    width: 100px;
+    height: var(--sm);
+    background-color: var(--neutral-100);
+}
+.product-loading-photos{
+    pointer-events: none;
+}
+.product-loading-card{
+    border: 1px solid var(--neutral-100);
+    border-radius: var(--sm);
+    background-color: var(--white);
+}
+.product-loading-image{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: var(--neutral-100);
+}
+.product-loading-card-info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--xl);
+    padding: var(--md);
+    background-color: var(--white);
+}
+.product-loading-card-title{
+    width: var(--xl);
+    height: var(--lg);
+    background-color: var(--neutral-100);
+}
+.product-loading-card-bottom{
+    position: absolute;
+    right: var(--md);
+    bottom: var(--md);
+    left: var(--md);
+    height: var(--sm);
+    background-color: var(--neutral-200);
+}
+.product-loading-pagination .pagination{
+    gap: var(--sm);
+}
+.product-loading-pagination-arrow{
+    width: var(--md);
+    height: var(--md);
+    background-color: var(--neutral-100);
+}
+.product-loading-pagination-number{
+    width: var(--md);
+    height: var(--md);
+    border-radius: 100%;
+    background-color: var(--neutral-100);
 }
