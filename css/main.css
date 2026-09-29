@@ -5,7 +5,10 @@
 @import url("/css/components/header.css");
 @import url("/css/components/headlines.css");
 @import url("/css/components/inputs.css");
+@import url("/css/components/nav-phone.css");
+@import url("/css/components/minicart.css");
 @import url("/css/components/upper-footer.css");
+@import url("/css/components/user-nav.css");
 @import url("/css/pages/auth.css");
 @import url("/css/pages/cart.css");
 @import url("/css/pages/confirmation.css");
