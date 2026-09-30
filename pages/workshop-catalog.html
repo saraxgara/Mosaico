@@ -27,18 +27,23 @@
                     <img src="/assets/icons/menu.svg" alt="Abrir menú">
                 </button>
             </div>
-            <nav id="mobile-menu" class="header-mobile-menu oculto">
-                <ul class="header-mobile-nav">
-                    <li><a class="nav-list" href="/index.html">Inicio</a></li>
-                    <li><a class="nav-list" href="/pages/product-catalog.html">Productos</a></li>
-                    <li><a class="nav-list" href="#">Talleres</a></li>
+            <nav class="mobile-nav-panel">
+                <ul class="mobile-nav-list">
+                    <div class="mobile-nav-header">
+                        <li><a class="mobile-nav-link" href="/index.html">Inicio</a></li>
+                        <button class="mobile-nav-close" type="button">
+                            <img src="/assets/icons/close.svg" alt="">
+                        </button>
+                    </div>
+                    <li><a class="mobile-nav-link" href="/pages/product-catalog.html">Productos</a></li>
+                    <li><a class="mobile-nav-link mobile-nav-link-active" href="/pages/workshop-catalog.html">Talleres</a></li>
                 </ul>
-                <ul class="header-mobile-icons">
-                    <li><a href="/pages/favorites.html"><img class="nav-icon" src="/assets/icons/like-empty.svg"/></a></li>
-                    <li><a href="#"><img class="nav-icon" src="/assets/icons/shopping-bag.svg"/></a></li>
-                    <li><a href="#"><img class="nav-icon" src="/assets/icons/user.svg"/></a></li>
+                <ul class="mobile-nav-icons">
+                    <li><a class="mobile-icon-btn" href="/pages/favorites.html"><img class="mobile-nav-icon" src="/assets/icons/like-empty.svg" alt=""></a></li>
+                    <li><a class="mobile-icon-btn" href="#" id="open-cart-mobile"><img class="mobile-nav-icon" src="/assets/icons/shopping-bag.svg" alt=""></a></li>
+                    <li><a class="mobile-icon-btn" href="#" id="open-user-mobile" type="button"><img class="mobile-nav-icon" src="/assets/icons/user.svg" alt=""></a></li>
                 </ul>
-                <a href="/pages/contact.html" class="main-header-btn">Contacto</a>
+                <a class="mobile-nav-contact-btn" href="/pages/contact.html">Contacto</a>
             </nav>
         </header>
         <main>
