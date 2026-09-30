@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--lg);
-    padding: var(--xl);
+    padding: var(--sm);
 }
 .mobile-nav-header{
     display: flex;

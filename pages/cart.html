@@ -20,7 +20,7 @@
                 <ul class="main-header-icons">
                         <li><a href="/pages/favorites.html"><img class="nav-icon" src="/assets/icons/like-empty.svg"/></a></li>
                         <li><a href="#"><img class="nav-icon" src="/assets/icons/shopping-bag.svg"/></a></li>
-                        <li><a href="#"><img class="nav-icon" src="/assets/icons/user.svg"/></a></li>
+                        <li><a href="#" id="open-user"><img class="nav-icon" src="/assets/icons/user.svg"/></a></li>
                 </ul>
                 <a href="/pages/contact.html" class="main-header-btn">Contacto</a>
                 <button class="header-menu-toggle" type="button">
@@ -40,11 +40,145 @@
                 </ul>
                 <ul class="mobile-nav-icons">
                     <li><a class="mobile-icon-btn" href="/pages/favorites.html"><img class="mobile-nav-icon" src="/assets/icons/like-empty.svg" alt=""></a></li>
-                    <li><a class="mobile-icon-btn" href="#" id="open-cart-mobile"><img class="mobile-nav-icon" src="/assets/icons/shopping-bag.svg" alt=""></a></li>
+                    <li><a class="mobile-icon-btn" href="#"><img class="mobile-nav-icon" src="/assets/icons/shopping-bag.svg" alt=""></a></li>
                     <li><a class="mobile-icon-btn" href="#" id="open-user-mobile" type="button"><img class="mobile-nav-icon" src="/assets/icons/user.svg" alt=""></a></li>
                 </ul>
                 <a class="mobile-nav-contact-btn" href="/pages/contact.html">Contacto</a>
             </nav>
+            <aside class="minicart-panel">
+                <div class="minicart-header">
+                    <a class="minicart-title" href="/pages/cart.html">
+                        Carrito
+                        <img src="/assets/icons/products-primary-500.svg" alt="">
+                    </a>
+                    <button class="minicart-close" type="button">
+                        <img src="/assets/icons/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="minicart-group">
+                    <h3 class="minicart-group-title">Productos (4)</h3>
+                    <ul class="minicart-items-list">
+                        <li class="minicart-item">
+                            <img class="minicart-item-image" src="/assets/images/taza_gres_moteado.png" alt="Taza artesanal">
+                            <div class="minicart-item-info">
+                                <h4 class="minicart-item-title">Taza artesanal</h4>
+                                <p class="minicart-item-detail">Gres moteado</p>
+                            </div>
+                            <button class="minicart-item-remove" type="button">
+                                <img src="/assets/icons/trash.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="minicart-item-row">
+                            <span class="minicart-item-price">22,00 €</span>
+                            <div class="minicart-item-quantity">
+                                <button class="minicart-quantity-btn" type="button">
+                                    <img src="/assets/icons/minus-primary-500.svg" alt="">
+                                </button>
+                                <span class="minicart-quantity-value">1</span>
+                                <button class="minicart-quantity-btn" type="button">
+                                    <img src="/assets/icons/plus-primary-500.svg" alt="">
+                                </button>
+                            </div>
+                        </li>
+                        <li class="minicart-item">
+                            <img class="minicart-item-image" src="/assets/images/vela_ámbar.png" alt="Vela ámbar">
+                            <div class="minicart-item-info">
+                                <h4 class="minicart-item-title">Vela ámbar</h4>
+                                <p class="minicart-item-detail">Cera de soja</p>
+                            </div>
+                            <button class="minicart-item-remove" type="button">
+                                <img src="/assets/icons/trash.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="minicart-item-row">
+                            <span class="minicart-item-price">36,00 €</span>
+                            <div class="minicart-item-quantity">
+                                <button class="minicart-quantity-btn" type="button">
+                                    <img src="/assets/icons/minus-primary-500.svg" alt="">
+                                </button>
+                                <span class="minicart-quantity-value">2</span>
+                                <button class="minicart-quantity-btn" type="button">
+                                    <img src="/assets/icons/plus-primary-500.svg" alt="">
+                                </button>
+                            </div>
+                        </li>
+                        <li class="minicart-item">
+                            <img class="minicart-item-image" src="/assets/images/plato_concha.png" alt="Plato concha">
+                            <div class="minicart-item-info">
+                                <h4 class="minicart-item-title">Plato concha</h4>
+                                <p class="minicart-item-detail">Cerámica artesanal</p>
+                            </div>
+                            <button class="minicart-item-remove" type="button">
+                                <img src="/assets/icons/trash.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="minicart-item-row">
+                            <span class="minicart-item-price">16,00 €</span>
+                            <div class="minicart-item-quantity">
+                                <button class="minicart-quantity-btn" type="button">
+                                    <img src="/assets/icons/minus-primary-500.svg" alt="">
+                                </button>
+                                <span class="minicart-quantity-value">1</span>
+                                <button class="minicart-quantity-btn" type="button">
+                                    <img src="/assets/icons/plus-primary-500.svg" alt="">
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="minicart-group">
+                    <h3 class="minicart-group-title">Talleres (1)</h3>
+                    <ul class="minicart-items-list">
+                        <li class="minicart-item">
+                            <img class="minicart-item-image" src="/assets/images/iniciación_cerámica.png" alt="Taller de iniciación a la cerámica">
+                            <div class="minicart-item-info">
+                                <h4 class="minicart-item-title">Iniciación a la cerámica</h4>
+                                <p class="minicart-item-detail">24 de mayo · 11:00 h a 13:30 h</p>
+                                <p class="minicart-item-detail">Barcelona</p>
+                            </div>
+                            <button class="minicart-item-remove" type="button">
+                                <img src="/assets/icons/trash.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="minicart-item-row">
+                            <span class="minicart-item-price">45,00 €</span>
+                            <div class="minicart-item-quantity">
+                                <button class="minicart-quantity-btn" type="button">
+                                    <img src="/assets/icons/minus-primary-500.svg" alt="">
+                                </button>
+                                <span class="minicart-quantity-value">1</span>
+                                <button class="minicart-quantity-btn" type="button">
+                                    <img src="/assets/icons/plus-primary-500.svg" alt="">
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="minicart-total-row">
+                    <span class="minicart-total-label">Total</span>
+                    <span class="minicart-total-value">119,00 €</span>
+                </div>
+                <a class="minicart-checkout-btn" href="/pages/cart.html">
+                    <img src="/assets/icons/products-white.svg" alt="">
+                    Ir al carrito
+                </a>
+            </aside>
+            <aside class="user-nav-panel">
+                <div class="user-nav-header">
+                    <a class="user-nav-title" href="/pages/profile.html">
+                        Perfil
+                        <img src="/assets/icons/user-primary-500.svg" alt="">
+                    </a>
+                    <button class="user-nav-close" type="button">
+                        <img src="/assets/icons/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="user-nav-btn-group">
+                    <a class="user-nav-btn" href="/pages/login.html">Iniciar sesión</a>
+                    <a class="user-nav-btn-outline" href="/pages/signin.html">Crear cuenta</a>
+                </div>
+                <a class="user-nav-logout" href="#">Cerrar sesión</a>
+            </aside>
         </header>
         <main>
             <div class="cart-page">

@@ -1,9 +1,24 @@
 .minicart-panel{
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    width: 420px;
     background-color: var(--background-50);
     display: flex;
     flex-direction: column;
     gap: var(--lg);
     padding: var(--xl);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    z-index: 1100;
+}
+.minicart-panel.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 .minicart-header{
     display: flex;
@@ -132,4 +147,13 @@
 }
 .minicart-checkout-btn img{
     width: var(--md);
+}
+
+/* MEDIA QUERY */
+@media (max-width: 680px) {
+
+    .minicart-panel{
+        width: 100%;
+        padding: var(--sm);
+    }
 }
