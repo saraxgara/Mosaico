@@ -6,7 +6,6 @@ const botonCerrar = document.querySelector(".mobile-nav-close");
 botonMenu.addEventListener("click", () => {
 
     menuMobile.classList.toggle("active");
-    botonMenu.setAttribute("aria-expanded", menuAbierto);
 });
 
 botonCerrar.addEventListener("click", () => {
