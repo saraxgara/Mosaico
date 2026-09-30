@@ -10,6 +10,7 @@
 
 /* MAIN HEADER */
 .main-header{
+    position: relative;
     display: flex;
     justify-content: center;
     padding: var(--md) var(--xl);
@@ -21,6 +22,7 @@
     min-width: var(--content-min-width); 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .logo-desktop{
     width: 267px;
@@ -74,15 +76,26 @@
 .header-menu-toggle img{
     width: var(--xl);
 }
-.header-mobile-menu{
-    display: none;
+.mobile-nav-panel{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-50);
+    display: flex;
     flex-direction: column;
     gap: var(--lg);
-    padding: var(--lg) var(--xl);
-    background-color: var(--background-50);
+    padding: var(--xl);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+    z-index: 1000;
 }
-.oculto{
-    display: none;
+.mobile-nav-panel.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 /* MEDIA QUERY */

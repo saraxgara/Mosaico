@@ -1,15 +1,17 @@
 /* MOBILE HEADER */
 const botonMenu = document.querySelector(".header-menu-toggle");
-const menuMovil = document.querySelector("#mobile-menu");
+const menuMobile = document.querySelector(".mobile-nav-panel");
+const botonCerrar = document.querySelector(".mobile-nav-close");
 
 botonMenu.addEventListener("click", () => {
-    menuMovil.classList.toggle("oculto");
+
+    menuMobile.classList.toggle("active");
+    const menuAbierto = menuMobile.classList.contains("active");
+    botonMenu.setAttribute("aria-expanded", menuAbierto);
 });
-// 1. Seleccionamos el botón y el menú
-const menu = document.querySelector(".nav-links");
- 
-// 2. Escuchamos el clic en la hamburguesa
-boton.addEventListener("click", () => {
-    // 3. Quitamos/ponemos la clase 'active' a ambos
-    boton.classList.toggle("active");
+
+botonCerrar.addEventListener("click", () => {
+
+    menuMobile.classList.remove("active");
+    botonMenu.setAttribute("aria-expanded", "false");
 });
