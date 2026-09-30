@@ -257,6 +257,16 @@
     font: var(--body-small-bold);
 }
 
+/* TRANSICIONES */
+.product-card-image,
+.workshop-card-image{
+    transition: transform 0.5s ease;
+}
+.product-card:hover .product-card-image,
+.workshop-card:hover .workshop-card-image{
+    transform: scale(1.08);
+}
+
 /* MEDIA QUERY */
 @media (max-width: 680px){
 

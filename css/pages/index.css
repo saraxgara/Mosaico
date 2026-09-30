@@ -162,6 +162,14 @@
     font: var(--body-base-bold);
 }
 
+/* TRANSICIONES */
+.home-category-img{
+    transition: transform 0.5s ease;
+}
+.home-category-card:hover .home-category-img{
+    transform: scale(1.08);
+}
+
 /* MEDIA QUERY */
 @media (max-width: 680px){
 
