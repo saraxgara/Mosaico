@@ -6,21 +6,17 @@ const botonCerrar = document.querySelector(".mobile-nav-close");
 botonMenu.addEventListener("click", () => {
 
     menuMobile.classList.toggle("active");
-    const menuAbierto = menuMobile.classList.contains("active");
     botonMenu.setAttribute("aria-expanded", menuAbierto);
 });
 
 botonCerrar.addEventListener("click", () => {
 
     menuMobile.classList.remove("active");
-    botonMenu.setAttribute("aria-expanded", "false");
 });
 
 
 /* MINI CARRITO */
-const botonesCarrito = document.querySelectorAll(
-    "#open-cart, #open-cart-mobile"
-);
+const botonesCarrito = document.querySelectorAll("#open-cart, #open-cart-mobile");
 
 const minicart = document.querySelector(".minicart-panel");
 const botonCerrarMinicart = document.querySelector(".minicart-close");
@@ -39,9 +35,7 @@ botonCerrarMinicart.addEventListener("click", () => {
 
 
 /* USER NAV */
-const botonesUsuario = document.querySelectorAll(
-    "#open-user, #open-user-mobile"
-);
+const botonesUsuario = document.querySelectorAll("#open-user, #open-user-mobile");
 
 const userNav = document.querySelector(".user-nav-panel");
 const botonCerrarUserNav = document.querySelector(".user-nav-close");
@@ -52,10 +46,10 @@ botonesUsuario.forEach((boton) => {
         event.preventDefault();
         userNav.classList.toggle("active");
         menuMobile.classList.remove("active");
-        botonMenu.setAttribute("aria-expanded", "false");
     });
 });
 
 botonCerrarUserNav.addEventListener("click", () => {
+
     userNav.classList.remove("active");
 });
