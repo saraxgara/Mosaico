@@ -400,4 +400,37 @@
             </div>
         </footer>
     </body>
+    <div class="modal-overlay" id="modal-error">
+        <section class="modal-box">
+            <div class="modal-group">
+                <div class="modal-header">
+                    <span class="modal-title">¡Algo ha ido mal!</span>
+                    <button class="modal-close" type="button">
+                        <img src="/assets/icons/close.svg" alt="">
+                    </button>
+                </div>
+                <p class="modal-text">No se ha podido completar la acción.<br>Inténtalo de nuevo.</p>
+            </div>
+            <div class="modal-btn-end">
+                <button class="modal-btn modal-btn-retry" type="button">Reintentar</button>
+            </div>
+        </section>
+    </div>
+    <div class="modal-overlay" id="modal-delete">
+        <section class="modal-box">
+            <div class="modal-group">
+                <div class="modal-header">
+                    <span class="modal-title">¿Quieres eliminar esto?</span>
+                    <button class="modal-close" type="button">
+                        <img src="/assets/icons/close.svg" alt="">
+                    </button>
+                </div>
+                <p class="modal-text">Esta acción no se puede deshacer.</p>
+            </div>
+            <div class="modal-btn-group">
+                <button class="modal-btn modal-btn-cancel" type="button">Cancelar</button>
+                <button class="modal-btn modal-btn-delete" type="button">Eliminar</button>
+            </div>
+        </section>
+    </div>
 </html>

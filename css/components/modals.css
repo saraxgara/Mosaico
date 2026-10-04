@@ -1,3 +1,23 @@
+.modal-overlay{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 150ms ease-out, visibility 150ms ease-out;
+    backdrop-filter: blur(5px);
+}
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
 .modal-box{
     width: 400px;
     height: 400px;
@@ -8,6 +28,11 @@
     flex-direction: column;
     justify-content: space-between;
     padding: var(--xl);
+    transform: scale(0.95);
+    transition: transform 150ms ease-out;
+}
+.modal-overlay.active .modal-box{
+    transform: scale(1);
 }
 .modal-group{
     display: flex;
@@ -50,22 +75,37 @@
     width: var(--7xl);
     height: var(--xl);
     font: var(--body-small-bold);
+    cursor: pointer;
 }
 .modal-btn-cancel{
     color: var(--white);
     background-color: var(--primary-500);
+}
+.modal-btn-cancel:hover{
+    background-color: var(--primary-300);
 }
 .modal-btn-delete{
     background-color: transparent;
     color: var(--error-500);
     border: 2px solid var(--error-500)
 }
+.modal-btn-delete:hover{
+    color: var(--error-300);
+    border: 2px solid var(--error-300)
+}
 .modal-btn-agreed{
     background-color: transparent;
     color: var(--success-500);
     border: 2px solid var(--success-500)
 }
+.modal-btn-agreed:hover{
+    color: var(--success-300);
+    border: 2px solid var(--success-300)
+}
 .modal-btn-retry{
     color: var(--white);
     background-color: var(--secondary-500);
+}
+.modal-btn-retry:hover{
+    background-color: var(--secondary-300);
 }

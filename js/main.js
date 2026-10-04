@@ -52,3 +52,50 @@ botonCerrarUserNav.addEventListener("click", () => {
 
     userNav.classList.remove("active");
 });
+
+/* MODALS */
+
+const modalDelete = crearModal("modal-delete");
+const modalSuccess = crearModal("modal-success");
+const modalError = crearModal("modal-error");
+
+function crearModal(overlayId) {
+    const overlay = document.getElementById(overlayId);
+    if (!overlay) return;
+
+    const cerrarModal = () => overlay.classList.remove("active");
+
+    overlay.querySelectorAll(".modal-close, .modal-btn").forEach((btn) => {
+        btn.addEventListener("click", cerrarModal);
+    });
+
+    overlay.addEventListener("click", (e) => {
+        if (e.target === overlay) cerrarModal();
+    });
+
+    return {
+        abrir: () => overlay.classList.add("active"),
+        cerrar: cerrarModal
+    };
+}
+
+document.querySelectorAll(".cart-item-remove, .minicart-item-remove").forEach((btn) => {
+    
+    btn.addEventListener("click", () => {
+        modalDelete.abrir();
+    });
+});
+
+document.querySelectorAll(".contact-btn").forEach((btn) => {
+    
+    btn.addEventListener("click", () => {
+        modalSuccess.abrir();
+    });
+});
+
+document.querySelectorAll(".profile-btn").forEach((btn) => {
+    
+    btn.addEventListener("click", () => {
+        modalError.abrir();
+    });
+});

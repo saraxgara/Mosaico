@@ -237,8 +237,7 @@
                                         <textarea class="contact-textarea" id="contact-message" name="message" rows="4" placeholder="Cuéntanos..." required></textarea>
                                     </div>
                                 </div>
-                                <button class="contact-btn" type="submit">
-                                    Enviar
+                                <button class="contact-btn" type="submit">Enviar
                                     <img src="/assets/icons/send-white.svg" alt="">
                                 </button>
                             </form>
@@ -366,4 +365,37 @@
             </div>
         </footer>
     </body>
+    <div class="modal-overlay" id="modal-success">
+        <section class="modal-box">
+            <div class="modal-group">
+                <div class="modal-header">
+                    <span class="modal-title">¡Formulario enviado!</span>
+                    <button class="modal-close" type="button">
+                        <img src="/assets/icons/close.svg" alt="">
+                    </button>
+                </div>
+                <p class="modal-text">Hemos recibido tu solicitud.<br>Te contactaremos pronto.</p>
+            </div>
+            <div class="modal-btn-end">
+                <button class="modal-btn modal-btn-agreed" type="button">Entendido</button>
+            </div>
+        </section>
+    </div>
+    <div class="modal-overlay" id="modal-delete">
+        <section class="modal-box">
+            <div class="modal-group">
+                <div class="modal-header">
+                    <span class="modal-title">¿Quieres eliminar esto?</span>
+                    <button class="modal-close" type="button">
+                        <img src="/assets/icons/close.svg" alt="">
+                    </button>
+                </div>
+                <p class="modal-text">Esta acción no se puede deshacer.</p>
+            </div>
+            <div class="modal-btn-group">
+                <button class="modal-btn modal-btn-cancel" type="button">Cancelar</button>
+                <button class="modal-btn modal-btn-delete" type="button">Eliminar</button>
+            </div>
+        </section>
+    </div>
 </html>

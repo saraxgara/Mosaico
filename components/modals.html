@@ -5,54 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modals</title>
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/main.js" defer></script>
 </head>
     <body>
         <main>
-            <section class="modal-box">
-                <div class="modal-group">
-                    <div class="modal-header">
-                        <span class="modal-title">¿Quieres eliminar esto?</span>
-                        <button class="modal-close" type="button">
-                            <img src="/assets/icons/close.svg" alt="">
-                        </button>
+            <div class="modal-overlay" id="modal-delete">
+                <section class="modal-box">
+                    <div class="modal-group">
+                        <div class="modal-header">
+                            <span class="modal-title">¿Quieres eliminar esto?</span>
+                            <button class="modal-close" type="button">
+                                <img src="/assets/icons/close.svg" alt="">
+                            </button>
+                        </div>
+                        <p class="modal-text">Esta acción no se puede deshacer.</p>
                     </div>
-                    <p class="modal-text">Esta acción no se puede deshacer.</p>
-                </div>
-                <div class="modal-btn-group">
-                    <button class="modal-btn modal-btn-cancel" type="button">Cancelar</button>
-                    <button class="modal-btn modal-btn-delete" type="button">Eliminar</button>
-                </div>
-            </section>
+                    <div class="modal-btn-group">
+                        <button class="modal-btn modal-btn-cancel" type="button">Cancelar</button>
+                        <button class="modal-btn modal-btn-delete" type="button">Eliminar</button>
+                    </div>
+                </section>
+            </div>
 
-            <section class="modal-box">
-                <div class="modal-group">
-                    <div class="modal-header">
-                        <span class="modal-title">¡Formulario enviado!</span>
-                        <button class="modal-close" type="button">
-                            <img src="/assets/icons/close.svg" alt="">
-                        </button>
+            <div class="modal-overlay" id="modal-success">
+                <section class="modal-box">
+                    <div class="modal-group">
+                        <div class="modal-header">
+                            <span class="modal-title">¡Formulario enviado!</span>
+                            <button class="modal-close" type="button">
+                                <img src="/assets/icons/close.svg" alt="">
+                            </button>
+                        </div>
+                        <p class="modal-text">Hemos recibido tu solicitud.<br>Te contactaremos pronto.</p>
                     </div>
-                    <p class="modal-text">Hemos recibido tu solicitud.<br>Te contactaremos pronto.</p>
-                </div>
-                <div class="modal-btn-end">
-                    <button class="modal-btn modal-btn-agreed" type="button">Entendido</button>
-                </div>
-            </section>
+                    <div class="modal-btn-end">
+                        <button class="modal-btn modal-btn-agreed" type="button">Entendido</button>
+                    </div>
+                </section>
+            </div>
 
-            <section class="modal-box">
-                <div class="modal-group">
-                    <div class="modal-header">
-                        <span class="modal-title">¡Algo ha ido mal!</span>
-                        <button class="modal-close" type="button">
-                            <img src="/assets/icons/close.svg" alt="">
-                        </button>
+            <div class="modal-overlay" id="modal-error">
+                <section class="modal-box">
+                    <div class="modal-group">
+                        <div class="modal-header">
+                            <span class="modal-title">¡Algo ha ido mal!</span>
+                            <button class="modal-close" type="button">
+                                <img src="/assets/icons/close.svg" alt="">
+                            </button>
+                        </div>
+                        <p class="modal-text">No se ha podido completar la acción.<br>Inténtalo de nuevo.</p>
                     </div>
-                    <p class="modal-text">No se ha podido completar la acción.<br>Inténtalo de nuevo.</p>
-                </div>
-                <div class="modal-btn-end">
-                    <button class="modal-btn modal-btn-retry" type="button">Reintentar</button>
-                </div>
-            </section>
+                    <div class="modal-btn-end">
+                        <button class="modal-btn modal-btn-retry" type="button">Reintentar</button>
+                    </div>
+                </section>
+            </div>
         </main>
     </body>
 </html>

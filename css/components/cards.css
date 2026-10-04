@@ -86,6 +86,9 @@
 .page-product-cart-btn img{
     width: var(--md);
 }
+.page-product-cart-btn:hover{
+    background-color: var(--primary-300);
+}
 .product-card-rating{
     display: flex;
     align-items: center;
