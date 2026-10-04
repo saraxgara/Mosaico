@@ -284,9 +284,22 @@
 .payment-checkout-btn:hover{
     background-color: var(--primary-300);
 }
-.payment-checkout-btn img{
+.payment-checkout-btn img,
+.payment-disabled-btn img{
     width: var(--md);
     margin-right: var(--xs);
+}
+
+.payment-disabled-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--2xl);
+    border: none;
+    border-radius: var(--sm);
+    background-color: var(--neutral-500);
+    color: var(--white);
+    font: var(--body-small-bold);
 }
 
 /* MEDIA QUERY */

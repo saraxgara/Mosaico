@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Pago</title>
     <link rel="stylesheet" href="/css/main.css">
     <script src="/js/main.js" defer></script>
 </head>
@@ -19,10 +19,10 @@
                 </ul>
                 <ul class="main-header-icons">
                         <li><a href="/pages/favorites.html"><img class="nav-icon" src="/assets/icons/like-empty.svg"/></a></li>
-                        <li><a href="#" id="open-cart"><img class="nav-icon" src="/assets/icons/shopping-bag.svg"/></a></li>
+                        <li><a href="#"><img class="nav-icon" src="/assets/icons/shopping-bag-filled.svg"/></a></li>
                         <li><a href="#" id="open-user"><img class="nav-icon" src="/assets/icons/user.svg"/></a></li>
                 </ul>
-                <a href="#" class="main-header-btn">Contacto</a>
+                <a href="/pages/contact.html" class="main-header-btn">Contacto</a>
                 <button class="header-menu-toggle" type="button">
                     <img src="/assets/icons/menu.svg" alt="Abrir menú">
                 </button>
@@ -181,117 +181,177 @@
             </aside>
         </header>
         <main>
-            <div class="contact-page">
+            <div class="payment-page">
                 <section class="headline-section">
                     <div class="headline-content">
                         <div class="headline-upper-tab">
                             <a class="headline-upper-tab-text" href="/index.html">Inicio</a>
                             <img class="headline-upper-tab-icon" src="/assets/icons/check-right.svg">
-                            <a class="headline-upper-tab-text" href="#">Contacto</a>
+                            <a class="headline-upper-tab-text" href="/pages/cart.html">Carrito</a>
+                            <img class="headline-upper-tab-icon" src="/assets/icons/check-right.svg">
+                            <a class="headline-upper-tab-text" href="#">Pago</a>
                         </div>
                         <div class="headline-text">
-                            <h1 class="headline-main-title">Contacto</h1>
-                            <p class="headline-main-text">¿Tienes dudas, sugerencias o necesitas ayuda? Escríbenos y responderemos lo antes posible.</p>
+                            <h1 class="headline-main-title">Pago</h1>
+                            <p class="headline-main-text">Completa tu pago de forma segura.</p>
                         </div>
                     </div>
                 </section>
-                <section class="contact-section">
-                    <div class="contact-box">
-                        <div class="contact-form-card">
-                            <h2 class="contact-form-title">Envíanos un mensaje</h2>
-                            <form class="contact-form">
-                                <div class="contact-row">
-                                    <div class="contact-field">
-                                        <div class="contact-field-header">
-                                            <label class="contact-label" for="contact-name">Nombre</label>
-                                            <span class="contact-required">(obligatorio)</span>
+                <section class="payment-section">
+                    <div class="payment-box">
+                        <section class="payment-form-column">
+                            <div class="payment-card">
+                                <h2 class="payment-card-title">1. Dirección de envío</h2>
+                                <div class="payment-options">
+                                    <label class="payment-option payment-option-selected">
+                                        <input class="payment-radio" type="radio" name="shipping-address" value="casa" checked>
+                                        <div class="payment-option-content">
+                                            <span class="payment-option-title">Casa</span>
+                                            <p class="payment-option-text">Avenida de la playa, 6<br>09718 Valencia, España</p>
                                         </div>
-                                        <input class="contact-input" type="text" id="contact-name" name="name" placeholder="Tu nombre" required>
-                                    </div>
-                                    <div class="contact-field">
-                                        <div class="contact-field-header">
-                                            <label class="contact-label" for="contact-email">Correo electrónico</label>
-                                            <span class="contact-required">(obligatorio)</span>
+                                    </label>
+                                    <label class="payment-option">
+                                        <input class="payment-radio" type="radio" name="shipping-address" value="trabajo">
+                                        <div class="payment-option-content">
+                                            <span class="payment-option-title">Trabajo</span>
+                                            <p class="payment-option-text">Calle de Nueva Esperanza, 2<br>05478 Valencia, España</p>
                                         </div>
-                                        <input class="contact-input" type="email" id="contact-email" name="email" placeholder="Tu correo electrónico" required>
-                                    </div>
+                                    </label>
+                                    <button class="payment-add-option" type="button">
+                                        <img src="/assets/icons/plus.svg" alt="">Añadir una nueva dirección
+                                    </button>
                                 </div>
-                                <div class="contact-row">
-                                    <div class="contact-field">
-                                        <div class="contact-field-header">
-                                            <label class="contact-label" for="contact-subject">Asunto</label>
-                                            <span class="contact-required">(obligatorio)</span>
+                            </div>
+                            <div class="payment-card">
+                                <h2 class="payment-card-title">2. Método de pago</h2>
+                                <div class="payment-options">
+                                    <a class="payment-option payment-option" href="/pages/payment.html">
+                                        <input class="payment-radio" type="radio" name="payment-method" value="card">
+                                        <div class="payment-option-content payment-option-content-row">
+                                            <span class="payment-option-title">Tarjeta de crédito o débito</span>
                                         </div>
-                                        <select class="contact-select" id="contact-subject" name="subject" required>
-                                            <option value="talleres">Talleres</option>
-                                            <option value="productos">Productos</option>
-                                            <option value="pedidos">Pedidos y envíos</option>
-                                            <option value="otro">Otro</option>
-                                        </select>
-                                    </div>
-                                    <div class="contact-field">
-                                        <div class="contact-field-header">
-                                            <label class="contact-label" for="contact-message">Mensaje</label>
-                                            <span class="contact-required">(obligatorio)</span>
+                                        <div class="payment-option-icons">
+                                            <img class="payment-method-icon" src="/assets/icons/mastercard.svg" alt="Mastercard">
+                                            <img class="payment-method-icon" src="/assets/icons/visa.svg" alt="Visa">
                                         </div>
-                                        <textarea class="contact-textarea" id="contact-message" name="message" rows="4" placeholder="Cuéntanos..." required></textarea>
-                                    </div>
+                                    </a>
+                                    <label class="payment-option">
+                                        <input class="payment-radio" type="radio" name="payment-method" value="paypal">
+                                        <div class="payment-option-content payment-option-content-row">
+                                            <span class="payment-option-title">Paypal</span>
+                                        </div>
+                                        <img class="payment-method-icon" src="/assets/icons/paypal.svg" alt="">
+                                    </label>
+                                    <label class="payment-option">
+                                        <input class="payment-radio" type="radio" name="payment-method" value="bizum">
+                                        <div class="payment-option-content payment-option-content-row">
+                                            <span class="payment-option-title">Bizum</span>
+                                        </div>
+                                        <img class="payment-method-icon" src="/assets/icons/bizum.svg" alt="">
+                                    </label>
+                                    <label class="payment-option">
+                                        <input class="payment-radio" type="radio" name="payment-method" value="apple-pay">
+                                        <div class="payment-option-content payment-option-content-row">
+                                            <span class="payment-option-title">Apple pay</span>
+                                        </div>
+                                        <img class="payment-method-icon" src="/assets/icons/apple-pay.svg" alt="">
+                                    </label>
                                 </div>
-                                <button class="contact-btn" type="submit">Enviar
-                                    <img src="/assets/icons/send-white.svg" alt="">
-                                </button>
-                            </form>
-                        </div>
-                        <aside class="contact-info-card">
-                            <h2 class="contact-info-title">Otras formas de encontrarnos</h2>
-                            <section class="contact-info-list">
-                                <div class="contact-info-item">
-                                    <img class="contact-info-icon" src="/assets/icons/email-primary-500.svg" alt="">
-                                    <div class="contact-info-content">
-                                        <a class="contact-info-heading" href="#">hola@mosaico.com</a>
-                                        <p class="contact-info-text">Te responderemos en menos de 24 horas</p>
-                                    </div>
+                                <div class="payment-secure-banner">
+                                    <img class="payment-secure-icon" src="/assets/icons/security-primary-500.svg" alt="">
+                                    <span class="payment-secure-text">Pago 100% seguro</span>
                                 </div>
-                                <div class="contact-info-item">
-                                    <img class="contact-info-icon" src="/assets/icons/phone-primary-500.svg" alt="">
-                                    <div class="contact-info-content">
-                                        <a class="contact-info-heading" href="#">+34 600 123 456</a>
-                                        <p class="contact-info-text">Lunes a viernes de 9:00 h a 18:00 h</p>
-                                    </div>
+                            </div>
+                        </section>
+                        <aside class="payment-summary-card">
+                            <h2 class="payment-summary-title">3. Resumen de tu pedido</h2>
+                            <div class="payment-summary-group">
+                                <h3 class="payment-summary-group-title">Productos (4)</h3>
+                                <ul class="payment-summary-list">
+                                    <li class="payment-summary-item">
+                                        <img class="payment-summary-image" src="/assets/images/taza_gres_moteado.png" alt="Taza artesanal">
+                                        <div class="payment-summary-item-info">
+                                            <h4 class="payment-summary-item-title">Taza artesanal</h4>
+                                            <p class="payment-summary-item-detail">Gres moteado</p>
+                                        </div>
+                                        <div class="payment-summary-item-price">
+                                            <span class="payment-summary-item-amount">22,00 €</span>
+                                            <span class="payment-summary-item-qty">Cant. 1</span>
+                                        </div>
+                                    </li>
+                                    <li class="payment-summary-item">
+                                        <img class="payment-summary-image" src="/assets/images/vela_ámbar.png" alt="Vela ámbar">
+                                        <div class="payment-summary-item-info">
+                                            <h4 class="payment-summary-item-title">Vela ámbar</h4>
+                                            <p class="payment-summary-item-detail">Cera de soja</p>
+                                        </div>
+                                        <div class="payment-summary-item-price">
+                                            <span class="payment-summary-item-amount">36,00 €</span>
+                                            <span class="payment-summary-item-qty">Cant. 2</span>
+                                        </div>
+                                    </li>
+                                    <li class="payment-summary-item">
+                                        <img class="payment-summary-image" src="/assets/images/plato_concha.png" alt="Plato concha">
+                                        <div class="payment-summary-item-info">
+                                            <h4 class="payment-summary-item-title">Plato concha</h4>
+                                            <p class="payment-summary-item-detail">Cerámica artesanal</p>
+                                        </div>
+                                        <div class="payment-summary-item-price">
+                                            <span class="payment-summary-item-amount">16,00 €</span>
+                                            <span class="payment-summary-item-qty">Cant. 1</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="payment-summary-group">
+                                <h3 class="payment-summary-group-title">Talleres (1)</h3>
+                                <ul class="payment-summary-list">
+                                    <li class="payment-summary-item">
+                                        <img class="payment-summary-image" src="/assets/images/iniciación_cerámica.png" alt="Taller de iniciación a la cerámica">
+                                        <div class="payment-summary-item-info">
+                                            <h4 class="payment-summary-item-title">Iniciación a la cerámica</h4>
+                                            <p class="payment-summary-item-detail">24 de mayo — 11:00 h a 13:30 h</p>
+                                            <p class="payment-summary-item-detail">Barcelona</p>
+                                        </div>
+                                        <div class="payment-summary-item-price">
+                                            <span class="payment-summary-item-amount">45,00 €</span>
+                                            <span class="payment-summary-item-qty">Cant. 1</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <dl class="payment-summary-totals">
+                                <div class="payment-summary-row">
+                                    <dt class="payment-summary-label">Subtotal de productos</dt>
+                                    <dd class="payment-summary-value">74,00 €</dd>
                                 </div>
-                                <div class="contact-info-item">
-                                    <img class="contact-info-icon" src="/assets/icons/instagram-primary-500.svg" alt="">
-                                    <div class="contact-info-content">
-                                        <a class="contact-info-heading" href="#">@mosaico.ceramica</a>
-                                        <p class="contact-info-text">Síguenos para más inspiración</p>
-                                    </div>
+                                <div class="payment-summary-row">
+                                    <dt class="payment-summary-label">Subtotal de talleres</dt>
+                                    <dd class="payment-summary-value">45,00 €</dd>
                                 </div>
-                                <div class="contact-info-item">
-                                    <img class="contact-info-icon" src="/assets/icons/facebook-primary-500.svg" alt="">
-                                    <div class="contact-info-content">
-                                        <a class="contact-info-heading" href="#">Mosaico</a>
-                                        <p class="contact-info-text">Síguenos para más inspiración</p>
+                            </dl>
+                            <div class="payment-shipping-row">
+                                <div class="payment-shipping-group">
+                                    <div class="cart-shipping-label">
+                                        <span>Envío</span>
+                                        <button class="payment-info-btn" type="button">
+                                            <img src="/assets/icons/info.svg" alt="">
+                                        </button>
                                     </div>
+                                    <p class="payment-shipping-note">Envío estándar a España peninsular</p>
                                 </div>
-                                <div class="contact-info-item">
-                                    <img class="contact-info-icon" src="/assets/icons/location-primary-500.svg" alt="">
-                                    <div class="contact-info-content">
-                                        <p class="contact-info-heading">Ubicación</p>
-                                        <p class="contact-info-text">Calle de la Cerámica, 12<br>46001 Barcelona, España</p>
-                                        <a class="contact-info-link" href="#">
-                                            Ver en Google Maps
-                                            <img class="contact-info-location-icon" src="/assets/icons/arrow-right-secondary-500.svg" alt="">
-                                        </a>
-                                    </div>
+                                <span class="payment-shipping-value">Gratis</span>
+                            </div>
+                            <div class="payment-total-row">
+                                <div class="payment-total-group">
+                                    <p class="payment-total-label">Total</p>
+                                    <p class="payment-total-note">Impuestos incluidos</p>
                                 </div>
-                                <div class="contact-info-item">
-                                    <img class="contact-info-icon" src="/assets/icons/time-primary-500.svg" alt="">
-                                    <div class="contact-info-content">
-                                        <p class="contact-info-heading">Horario de apertura</p>
-                                        <p class="contact-info-text">Lunes a Viernes de 9:00 h a 18:00 h<br>Sábados de 10:00 h a 14:00 h</p>
-                                    </div>
-                                </div>
-                            </section>
+                                <span class="payment-total-value">119,00 €</span>
+                            </div>
+                            <button class="payment-disabled-btn">
+                                <img src="/assets/icons/pay-white.svg" alt="">Proceder al pago
+                            </button>
                         </aside>
                     </div>
                 </section>
@@ -365,37 +425,4 @@
             </div>
         </footer>
     </body>
-    <div class="modal-overlay" id="modal-success">
-        <section class="modal-box">
-            <div class="modal-group">
-                <div class="modal-header">
-                    <span class="modal-title">¡Formulario enviado!</span>
-                    <button class="modal-close" type="button">
-                        <img src="/assets/icons/close.svg" alt="">
-                    </button>
-                </div>
-                <p class="modal-text">Hemos recibido tu solicitud.<br>Te contactaremos pronto.</p>
-            </div>
-            <div class="modal-btn-end">
-                <button class="modal-btn modal-btn-agreed" type="button">Entendido</button>
-            </div>
-        </section>
-    </div>
-    <div class="modal-overlay" id="modal-delete">
-        <section class="modal-box">
-            <div class="modal-group">
-                <div class="modal-header">
-                    <span class="modal-title">¿Quieres eliminar esto?</span>
-                    <button class="modal-close" type="button">
-                        <img src="/assets/icons/close.svg" alt="">
-                    </button>
-                </div>
-                <p class="modal-text">Esta acción no se puede deshacer.</p>
-            </div>
-            <div class="modal-btn-group">
-                <button class="modal-btn modal-btn-cancel" type="button">Cancelar</button>
-                <button class="modal-btn modal-btn-delete" type="button">Eliminar</button>
-            </div>
-        </section>
-    </div>
 </html>

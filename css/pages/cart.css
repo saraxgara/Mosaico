@@ -235,7 +235,7 @@
     align-items: center;
     justify-content: center;
     height: var(--2xl);
-    border: 1px solid var(--primary-500);
+    border: 2px solid var(--primary-500);
     border-radius: var(--sm);
     background-color: transparent;
     color: var(--primary-500);
