@@ -118,7 +118,8 @@
         min-width: 0;
         max-width: none;
     }
-    .logo-desktop{
+    .logo-desktop,
+    .header-link-desktop{
         display: none;
     }
     .main-header-nav,
