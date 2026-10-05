@@ -31,7 +31,7 @@
     gap: var(--lg);
     padding: var(--xl);
     height: fit-content;
-    border: 1px solid var(--primary-100);
+    border: 2px solid var(--primary-100);
     border-radius: var(--sm);
 }
 
@@ -42,7 +42,7 @@
     gap: var(--lg);
     padding: var(--xl);
     background-color: var(--white);
-    border: 1px solid var(--primary-100);
+    border: 2px solid var(--primary-100);
     border-radius: var(--sm);
 }
 .payment-card-title{
@@ -59,7 +59,7 @@
     align-items: center;
     gap: var(--md);
     padding: var(--lg);
-    border: 1px solid var(--primary-100);
+    border: 2px solid var(--primary-100);
     border-radius: var(--sm);
     cursor: pointer;
 }
@@ -103,7 +103,7 @@
     align-items: center;
     gap: var(--md);
     padding: var(--lg);
-    border: 1px dashed var(--primary-100);
+    border: 2px dashed var(--primary-100);
     border-radius: var(--sm);
     background-color: transparent;
     color: var(--black);
@@ -157,7 +157,7 @@
     align-items: center;
     gap: var(--md);
     padding-bottom: var(--lg);
-    border-bottom: 1px solid var(--primary-100);
+    border-bottom: 2px solid var(--primary-100);
 }
 .payment-summary-item:last-child{
     border-bottom: none;
@@ -220,7 +220,7 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: var(--lg);
-    border-bottom: 1px solid var(--primary-100);
+    border-bottom: 2px solid var(--primary-100);
 }
 .payment-shipping-group{
     display: flex;
@@ -283,6 +283,9 @@
 }
 .payment-checkout-btn:hover{
     background-color: var(--primary-300);
+}
+.payment-checkout-btn:active{
+    background-color: var(--primary-700);
 }
 .payment-checkout-btn img,
 .payment-disabled-btn img{

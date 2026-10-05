@@ -25,7 +25,7 @@
     gap: var(--xl);
     padding: var(--xl);
     background-color: var(--white);
-    border: 1px solid var(--primary-100);
+    border: 2px solid var(--primary-100);
     border-radius: var(--sm);
 }
 .contact-form-title{
@@ -65,7 +65,7 @@
 .contact-textarea{
     width: 100%;
     padding: var(--xs) var(--sm);
-    border: 1px solid var(--neutral-200);
+    border: 2px solid var(--neutral-200);
     border-radius: var(--xs);
     color: var(--black);
     font: var(--body-small-regular);
@@ -103,6 +103,9 @@
 .contact-btn:hover{
     background-color: var(--primary-300);
 }
+.contact-btn:active{
+    background-color: var(--primary-700);
+}
 .contact-btn img{
     width: var(--md);
 }
@@ -111,7 +114,7 @@
 .contact-info-card{
     flex: 1;
     padding: var(--xl);
-    border: 1px solid var(--primary-100);
+    border: 2px solid var(--primary-100);
     background-color: var(--white);
     border-radius: var(--sm);
 }

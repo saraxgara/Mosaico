@@ -25,7 +25,7 @@
     flex-direction: column;
     padding: var(--xl);
     background-color: var(--white);
-    border: 1px solid var(--primary-100);
+    border: 2px solid var(--primary-100);
     border-radius: var(--sm);
 }
 .profile-user{
@@ -79,6 +79,9 @@
 .profile-nav-link:hover{
     background-color: var(--primary-50);
 }
+.profile-nav-link:active{
+    background-color: var(--primary-100);
+}
 .profile-nav-link-active{
     color: var(--primary-500);
     font-weight: bold;
@@ -101,7 +104,7 @@
     gap: var(--xl);
     padding: var(--xl);
     background-color: var(--white);
-    border: 1px solid var(--primary-100);
+    border: 2px solid var(--primary-100);
     border-radius: var(--sm);
 }
 .profile-form-title,
@@ -133,7 +136,7 @@
     width: 100%;
     height: var(--2xl);
     padding: 0 var(--md);
-    border: 1px solid var(--neutral-200);
+    border: 2px solid var(--neutral-200);
     border-radius: var(--xs);
     color: var(--black);
     font: var(--body-small-regular);
@@ -158,6 +161,9 @@
 }
 .profile-btn:hover{
     background-color: var(--primary-300);
+}
+.profile-btn:active{
+    background-color: var(--primary-700);
 }
 
 /* ACCOUNT INFO */

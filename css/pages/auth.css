@@ -12,7 +12,7 @@
     gap: var(--xl);
     background-color: var(--white);
     padding: var(--xl);
-    border: 1px solid var(--primary-100);
+    border: 2px solid var(--primary-100);
     border-radius: var(--sm);
 }
 .auth-card-login{
@@ -65,7 +65,7 @@
     width: 100%;
     height: var(--2xl);
     padding: 0 var(--md);
-    border: 1px solid var(--neutral-200);
+    border: 2px solid var(--neutral-200);
     border-radius: var(--xs);
     color: var(--black);
     font: var(--body-small-regular);
@@ -100,6 +100,9 @@
 .auth-forgot:hover{
     color: var(--secondary-300);
 }
+.auth-forgot:active{
+    color: var(--secondary-700);
+}
 .auth-checkbox-field{
     display: flex;
     align-items: start;
@@ -121,6 +124,9 @@
 .auth-inline-link:hover{
     color: var(--primary-300);
 }
+.auth-inline-link:active{
+    color: var(--primary-700);
+}
 .auth-btn{
     height: var(--2xl);
     border: none;
@@ -133,6 +139,9 @@
 .auth-btn:hover{
     background-color: var(--primary-300);
 }
+.auth-btn:active{
+    background-color: var(--primary-700);
+}
 .auth-switch{
     text-align: center;
     color: var(--black);
@@ -144,6 +153,9 @@
 }
 .auth-switch-link:hover{
     color: var(--secondary-300);
+}
+.auth-switch-link:active{
+    color: var(--secondary-700);
 }
 
 /* MEDIA QUERY */

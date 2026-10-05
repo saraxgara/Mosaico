@@ -37,6 +37,11 @@
 }
 .favorites-link:hover{
     color: var(--primary-300);
+    border-bottom: 2px solid var(--primary-300);
+}
+.favorites-link:active{
+    color: var(--primary-700);
+    border-bottom: 2px solid var(--primary-700);
 }
 .favorites-link-active{
     border: none;
@@ -61,7 +66,10 @@
     cursor: pointer;
 }
 .favorites-clear-tab-btn:hover{
-    border: 1px solid var(--secondary-500);
+    border: 2px solid var(--secondary-500);
+}
+.favorites-clear-tab-btn:active{
+    border: 2px solid var(--secondary-700);
 }
 .favorites-tab-icon{
     width: var(--md);

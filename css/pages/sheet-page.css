@@ -43,7 +43,7 @@
 .sheet-page-product-thumbnail{
     width: 100px;
     height: 100px;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     border-radius: var(--xs);
     background-color: transparent;
     overflow: hidden;
@@ -109,8 +109,8 @@
     flex-direction: column;
     gap: var(--lg);
     padding: var(--md) 0 var(--md) 0;
-    border-top: 1px solid var(--primary-100);
-    border-bottom: 1px solid var(--primary-100);
+    border-top: 2px solid var(--primary-100);
+    border-bottom: 2px solid var(--primary-100);
 }
 .sheet-page-product-feature{
     display: flex;
@@ -181,6 +181,9 @@
 .sheet-page-product-cart-button:hover{
     background-color: var(--primary-300);
 }
+.sheet-page-product-cart-button:active{
+    background-color: var(--primary-700);
+}
 .sheet-page-product-cart-button img{
     width: var(--md);
 }
@@ -190,7 +193,7 @@
     align-items: center;
     justify-content: center;
     gap: var(--xs);
-    border: 1px solid var(--primary-500);
+    border: 2px solid var(--primary-500);
     border-radius: var(--xs);
     background-color: transparent;
     color: var(--primary-500);
@@ -198,8 +201,12 @@
     cursor: pointer;
 }
 .sheet-page-product-favorite-button:hover{
-    border: 1px solid var(--primary-300);
+    border: 2px solid var(--primary-300);
     color: var(--primary-300);
+}
+.sheet-page-product-favorite-button:active{
+    border: 2px solid var(--primary-700);
+    color: var(--primary-700);
 }
 .sheet-page-product-favorite-button img{
     width: var(--md);
@@ -212,7 +219,7 @@
     display: flex;
     gap: var(--lg);
     padding: var(--lg);
-    border-right: 1px solid var(--primary-100);
+    border-right: 2px solid var(--primary-100);
 }
 .sheet-page-product-benefit:last-child{
     border-right: none;
@@ -240,7 +247,7 @@
     flex-direction: column;
     gap: var(--lg);
     padding: var(--lg) 0;
-    border-top: 1px solid var(--primary-100);
+    border-top: 2px solid var(--primary-100);
 }
 .sheet-page-description-title{
     color: var(--black);
@@ -285,7 +292,7 @@
     justify-content: space-between;
     gap: var(--3xl);
     padding: var(--lg) 0;
-    border-top: 1px solid var(--primary-100);
+    border-top: 2px solid var(--primary-100);
 }
 .sheet-page-calendar{
     flex: 1;
@@ -304,7 +311,7 @@
     flex-direction: column;
     gap: var(--lg);
     padding: var(--lg);
-    border: 1px solid var(--primary-100);
+    border: 2px solid var(--primary-100);
     border-radius: var(--sm);
 }
 .sheet-page-calendar-nav{

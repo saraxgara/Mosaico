@@ -18,7 +18,6 @@
     gap: var(--xl);
 }
 
-
 /* CONFIRMATION INFO  */
 .confirmation-order-info{
     display: flex;
@@ -52,6 +51,9 @@
 .confirmation-order-btn:hover{
     background-color: var(--primary-300);
 }
+.confirmation-order-btn:active{
+    background-color: var(--primary-700);
+}
 .confirmation-continue-btn{
     display: flex;
     align-items: center;
@@ -64,8 +66,12 @@
     font: var(--body-small-bold);
 }
 .confirmation-continue-btn:hover{
-    border: 1px solid var(--primary-300);
+    border: 2px solid var(--primary-300);
     color: var(--primary-300);
+}
+.confirmation-continue-btn:active{
+    border: 2px solid var(--primary-700);
+    color: var(--primary-700);
 }
 .confirmation-order-btn img,
 .confirmation-continue-btn img{
@@ -158,7 +164,7 @@
     gap: var(--lg);
     padding: var(--xl);
     background-color: var(--white);
-    border: 1px solid var(--primary-100);
+    border: 2px solid var(--primary-100);
     border-radius: var(--sm);
 }
 .confirmation-details-title{
@@ -170,7 +176,7 @@
     flex-direction: column;
     gap: var(--md);
     padding-bottom: var(--lg);
-    border-bottom: 1px solid var(--primary-100);
+    border-bottom: 2px solid var(--primary-100);
 }
 .confirmation-details-row{
     display: flex;
@@ -230,7 +236,7 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: var(--lg);
-    border-bottom: 1px solid var(--primary-100);
+    border-bottom: 2px solid var(--primary-100);
 }
 .confirmation-delivery-label{
     color: var(--black);

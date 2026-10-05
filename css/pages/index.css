@@ -79,6 +79,9 @@
 .home-input-btn:hover{
     background-color: var(--secondary-300);
 }
+.home-input-btn:active{
+    background-color: var(--secondary-700);
+}
 
 /* COMMON SECTION */
 .home-section{
@@ -114,6 +117,9 @@
 }
 .home-section-link-text:hover{
     color: var(--secondary-300);
+}
+.home-section-link-text:active{
+    color: var(--secondary-700);
 }
 .home-section-link-icon{
     width: var(--md);
