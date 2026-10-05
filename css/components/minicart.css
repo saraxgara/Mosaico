@@ -147,6 +147,12 @@
     font: var(--body-small-bold);
     text-decoration: none;
 }
+.minicart-checkout-btn:hover{
+    background-color: var(--primary-300);
+}
+.minicart-checkout-btn:active{
+    background-color: var(--primary-700);
+}
 .minicart-checkout-btn img{
     width: var(--md);
 }

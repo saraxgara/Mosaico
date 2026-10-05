@@ -47,6 +47,9 @@
 .nav-list:hover{
     color: var(--primary-300);
 }
+.nav-list:active{
+    color: var(--primary-700);
+}
 .nav-icon{
     width: var(--md);
 }
@@ -56,7 +59,7 @@
     padding: var(--sm) var(--lg);
     font: var(--body-tiny-bold);
     background-color: var(--primary-500);
-    color: var(--text-dark);
+    color: var(--white);
     border-radius: var(--sm);
     display: flex;
     align-items: center;
@@ -64,6 +67,9 @@
 }
 .main-header-btn:hover{
     background-color: var(--primary-300);
+}
+.main-header-btn:active{
+    background-color: var(--primary-700);
 }
 
 /* MOBILE VERSION */

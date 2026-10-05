@@ -89,6 +89,9 @@
 .page-product-cart-btn:hover{
     background-color: var(--primary-300);
 }
+.page-product-cart-btn:active{
+    background-color: var(--primary-700);
+}
 .product-card-rating{
     display: flex;
     align-items: center;
@@ -109,7 +112,7 @@
 /* WORKSHOP CARD */
 .workshop-card{
     width: 340px;
-    border: 1px solid var(--primary-100);
+    border: 2px solid var(--primary-100);
     border-radius: var(--sm);
     overflow: hidden;
     background-color: var(--white);
@@ -215,7 +218,7 @@
 /* EMPTY CARD */
 .empty-card{
     width: 340px;
-    border: 1px solid var(--primary-100);
+    border: 2px solid var(--primary-100);
     border-radius: var(--sm);
     overflow: hidden;
     background-color: var(--white);
