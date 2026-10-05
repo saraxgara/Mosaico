@@ -33,10 +33,46 @@
 .headline-main-title{
     color: var(--black);
     font: var(--h3);
+    opacity: 0;
+    animation-name: entradaTitulo;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
 .headline-main-text{
     color: var(--black);
     font: var(--body-base-regular);
+    opacity: 0;
+    animation-name: entradaTitulo;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+/* ANIMATIONS */
+@keyframes entradaTitulo{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes entradaIzquierda{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 /* MEDIA QUERY */

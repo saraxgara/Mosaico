@@ -110,6 +110,7 @@
         padding: var(--sm);
     }
     .logo-mobile{
+        display: block;
         width: 165px;
         height: 40px;
     }
@@ -119,9 +120,6 @@
     }
     .logo-desktop{
         display: none;
-    }
-    .logo-mobile{
-        display: block;
     }
     .main-header-nav,
     .main-header-icons,
