@@ -54,7 +54,6 @@ botonCerrarUserNav.addEventListener("click", () => {
 });
 
 /* MODALS */
-
 const modalDelete = crearModal("modal-delete");
 const modalSuccess = crearModal("modal-success");
 const modalError = crearModal("modal-error");
