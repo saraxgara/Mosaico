@@ -8,7 +8,7 @@ Esta carpeta contiene la maquetación estática del producto. No está conectada
 
 ## Enlaces
 
-- Proyecto publicado: Este proyecto no es público.
+- Proyecto publicado: https://github.com/saraxgara/Mosaico
 - Archivo de Figma: https://www.figma.com/design/cCHhilBB6wMvDDFaK7H6Tf/TFM-MosaiCo?node-id=39-63&t=1L2VqU4xAc5BHty1-1
 
 ## Tecnologías
@@ -29,71 +29,27 @@ La navegación entre páginas funciona desde el menú.
 
 ## Estructura de carpetas
 
-/
-├── index.html
-├── README.md
-├── pages/
-│   ├── product-catalog.html
-│   ├── product-sheet.html
-│   ├── workshop-catalog.html
-│   ├── workshop-sheet.html
-│   ├── favorites.html
-│   ├── cart.html
-│   ├── payment.html
-│   ├── confirmation.html
-│   ├── profile.html
-│   ├── login.html
-│   ├── signin.html
-│   ├── contact.html
-│   ├── favorite-empty.html          (estado vacío)
-│   ├── payment-disabled.html        (estado deshabilitado)
-│   └── product-catalog-loading.html (estado de carga)
-├── components/                      (componentes maquetados de forma aislada)
-│   ├── cards.html
-│   ├── footer.html
-│   ├── header.html
-│   ├── headlines.html
-│   ├── inputs.html
-│   ├── minicart.html
-│   ├── modals.html
-│   ├── nav-phone.html
-│   ├── upper-footer.html
-│   └── user-nav.html
-├── css/
-│   ├── main.css                     (reúne el resto de hojas de estilo)
-│   ├── base/
-│   │   ├── reset.css
-│   │   └── variables.css
-│   ├── components/
-│   │   ├── cards.css
-│   │   ├── footer.css
-│   │   ├── header.css
-│   │   ├── headlines.css
-│   │   ├── minicart.css
-│   │   ├── modals.css
-│   │   ├── nav-phone.css
-│   │   ├── upper-footer.css
-│   │   └── user-nav.css
-│   └── pages/
-│       ├── auth.css
-│       ├── cart.css
-│       ├── confirmation.css
-│       ├── contact.css
-│       ├── favorites.css
-│       ├── index.css
-│       ├── payment.css
-│       ├── product-catalog.css
-│       ├── profile.css
-│       ├── sheet-page.css
-│       └── workshop-catalog.css
-├── js/
-│   └── main.js
-└── assets/
-    ├── icons/
-    ├── images/
-    └── logo/
-    
-El CSS está organizado en tres niveles: `base` (reset y variables), `components` (un archivo por componente reutilizable) y `pages` (estilos propios de cada pantalla).
+- index.html: es la página principal del sitio web y el punto de entrada para el usuario.
+
+- README.md: contiene la documentación del proyecto, con información sobre su estructura, funcionamiento e instrucciones de uso.
+
+- pages/: reúne las páginas HTML del sitio, organizadas según las distintas funcionalidades, como el catálogo de productos y talleres, las fichas de detalle, los favoritos, el carrito, el pago, el perfil y la autenticación. También incluye páginas específicas para representar estados como la carga, el contenido vacío o las opciones deshabilitadas.
+
+- components/: contiene componentes HTML maquetados de forma aislada, como tarjetas, cabecera, pie de página, formularios, modales y elementos de navegación. Esto facilita su diseño, revisión y reutilización en distintas partes del sitio.
+
+- css/: organiza los estilos del proyecto en tres niveles:
+
+base/: contiene los estilos generales, como el reinicio de los estilos predeterminados del navegador (reset.css) y las variables globales de diseño (variables.css).
+
+components/: incluye una hoja de estilos por cada componente reutilizable.
+
+pages/: reúne los estilos específicos de cada página o tipo de pantalla.
+
+main.css: centraliza la importación del resto de hojas de estilo para mantener organizada su carga.
+
+- js/: contiene main.js, el archivo JavaScript principal, encargado de gestionar las interacciones y funcionalidades del sitio.
+
+- assets/: almacena los recursos gráficos del proyecto, organizados en tres carpetas: icons/ para iconos, images/ para imágenes y logo/ para los logotipos.
 
 ## Pantallas
 
