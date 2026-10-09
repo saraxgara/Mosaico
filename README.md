@@ -61,11 +61,8 @@ Inicio, catálogo de productos, ficha de producto, catálogo de talleres, ficha 
 - Variables CSS que reproducen los tokens definidos en Figma (color, tipografía y espaciado).
 - Componentes reutilizables: tarjetas de producto y de taller, botones, campos de formulario y paneles superpuestos.
 - Menú móvil, minicarrito y menú de usuario como paneles superpuestos con transición.
-- Aparición suave de las secciones de Inicio al hacer scroll.
-- Transición breve al entrar y salir de cada página.
 - Formularios con validación nativa del navegador.
 - Estados de interfaz: hover, focus, vacío y carga.
-- Animaciones desactivadas para quien tiene activada la preferencia de movimiento reducido en su sistema.
 
 ## Limitaciones
 
