@@ -8,7 +8,7 @@ Esta carpeta contiene la maquetación estática del producto. No está conectada
 
 ## Enlaces
 
-- Proyecto publicado: 
+- Proyecto publicado: Este proyecto no es público.
 - Archivo de Figma: https://www.figma.com/design/cCHhilBB6wMvDDFaK7H6Tf/TFM-MosaiCo?node-id=39-63&t=1L2VqU4xAc5BHty1-1
 
 ## Tecnologías
